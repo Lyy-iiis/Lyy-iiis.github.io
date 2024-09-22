@@ -1,0 +1,1 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QIn the project, we apply LLMs to answer user questions given a folder containing documents as the context.\\E$"}

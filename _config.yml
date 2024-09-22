@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Hanhong Zhao"
   avatar           : "/assets/images/photo.jpg"
-  bio              : "I am an undergraduate student at MIT"
+  bio              : "an undergraduate student at MIT"
   location         : "Cambridge, MA"
   # email            : "zhh24@mit.edu"
   links:
@@ -318,8 +318,15 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: # true
-      share: true
-      related: true
+      share: false
+      related: false
+
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
