@@ -1,0 +1,6 @@
+
+
+
+where $\hat{\mu}_t, \hat{\sigma}_t$ are simple functions (for example, in DDPM we have $\hat{\mu}_t(x)=\sqrt{1-{\beta}_t}x,\hat{\sigma}_t(x)=\sqrt{{\beta}_t}$, whereas ${\beta}_t$ are some hyperparameters, called the "diffusion schedule"). 
+
+The process starts with $x_0 \sim p_{\text{data}}$, and with properly selected ${\beta}_t$'s, we can ensure that $x_T \approx \mathcal{N}(0, I)$. We can further illustrate this in the figure below.

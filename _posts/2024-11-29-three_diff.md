@@ -21,9 +21,7 @@ $$
 p(x_t\mid x_{t-1}) = \mathcal{N}(x_t; \hat{\mu}_t(x_{t-1}), \hat{\sigma}_t(x_{t-1})^2\mathbf{I}),\qquad t=1,2,\ldots,T,
 $$ 
 
-where $\hat{\mu}_t, \hat{\sigma}_t$ are simple functions (for example, in DDPM we have $\hat{\mu}_t(x)=\sqrt{1-{\beta}_t}x,\hat{\sigma}_t(x)=\sqrt{{\beta}_t}$, whereas ${\beta}_t$ are some hyperparameters, called the "diffusion schedule"). 
-
-The process starts with $x_0 \sim p_{\text{data}}$, and with properly selected ${\beta}_t$'s, we can ensure that $x_T \approx \mathcal{N}(0, I)$. We can further illustrate this in the figure below.
+NOTE: two lines are remove here, since the website can't compile
 
 <!-- ![](/assets/images/posts/2024_1129/1.png) -->
 ![](/assets/images/posts/2024_1129/1.png)
