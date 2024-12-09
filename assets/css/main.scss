@@ -7,3 +7,37 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* 调整正文区域宽度 */
+
+.toc {
+    position: fixed; /* 固定位置 */
+    top: 100px; /* 距顶部的距离，可根据需求调整 */
+    left: 75px; /* 靠左侧显示 */
+    width: 250px; /* TOC 的宽度 */
+    max-height: 80vh; /* 限制最大高度 */
+    overflow-y: auto; /* 使长内容可滚动 */
+    background-color: #f8f9fa; /* 背景颜色，可选 */
+    padding: 10px; /* 内边距 */
+    border-radius: 8px; /* 边角圆润 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+.page__content {
+    max-width: 120%; /* 调整为 70% 的宽度，可根据需求修改 */
+    margin: 0 auto; /* 居中对齐 */
+}
+
+/* 调整正文文字大小 */
+.page__content {
+    font-size: 18px; /* 调整字体大小 */
+    line-height: 1.8; /* 调整行间距 */
+}
+
+.page__content h2 {
+    font-size: 1.8em; /* 调整 h2 标题大小 */
+}
+
+.page__content h3 {
+    font-size: 1.5em; /* 调整 h3 标题大小 */
+}
