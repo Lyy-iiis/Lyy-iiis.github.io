@@ -184,18 +184,17 @@ $$
 \frac{p(x_0^{(1)}\mid x_t)}{p(x_0^{(2)}\mid x_t)} ?
 $$
 
-A common guess may be around 1. The mathematical truth, however, is astonishing: the ratio is around $10^{27}$! This is not a joke, as we can immediately carry out a rule-of-thumb estimation:
+A common guess may be around 1. The mathematical truth, however, is astonishing: the ratio is on the order of $10^{4}$! This is not a joke, as we can immediately carry out a rule-of-thumb estimation:
 
-- each pixel is in the range $[0,1]$;
-- Thus, if you draw an sample from $p(x_t\mid x_0) = \mathcal{N}(x_t; 0.2 x_0, 0.8^2\mathbf{I})$, then it is likely that $\|x_t-0.2x_0\| \approx 0.8\sqrt{d}$, where $d$ is the dimension of the image;
+- By the Gaussian Annulus Theorem, if you draw an sample from $p(x_t\mid x_0) = \mathcal{N}(x_t; 0.2 x_0, 0.8^2\mathbf{I})$, then it is likely that $\|x_t-0.2x_0\| \approx 0.8\sqrt{d}$, where $d$ is the dimension of the image;
 - Let's say, $d=32\times 32\times 3\approx 3000$. Then the typical $L_2$ distance between $0.2x_0$ and $x_t$ is on the order of 40.
-- It turns out that the first image $0.2x_0^{(1)}$ is very close to the noise $x_t$, and $0.2x_0^{(2)}$ is little bit far away. For example, we may say that the first image has a distance of 39.5; while the second has a distance of 40.5. This doesn't sound like a big difference, but if you calculate the probability:
+- It turns out that the first image $0.2x_0^{(1)}$ is very close to the noise $x_t$, and $0.2x_0^{(2)}$ is little bit far away. For example, we may say that the first image has a distance of 39.9; while the second has a distance of 40.1. This doesn't sound like a big difference, but if you calculate the probability:
 
 $$
-\frac{p(x_0^{(1)}\mid x_t)}{p(x_0^{(2)}\mid x_t)} = \frac{\exp(-\frac{39.5^2}{2\times 0.8^2})}{\exp(-\frac{40.5^2}{2\times 0.8^2})} =e^{62.5} \approx 10^{27}. 
+\frac{p(x_0^{(1)}\mid x_t)}{p(x_0^{(2)}\mid x_t)} = \frac{\exp(-\frac{39.9^2}{2\times 0.8^2})}{\exp(-\frac{40.1^2}{2\times 0.8^2})} =e^{12.5} \approx 3\times 10^{5}. 
 $$
 
-Of course, you may not be very comfortable with this hand-wavy calculation, but we also provided a notebook at [here](https://github.com/Hope7Happiness/6s978_project/blob/main/TODO) for you to verify this.
+Of course, you may not be very comfortable with this hand-wavy calculation, but we also provided a notebook at [here](https://github.com/Hope7Happiness/6s978_project/blob/main/blog_post_demo/demo.ipynb) for you to verify this numerically.
 
 So, why did you get this question wrong, even if you should be a human -- a master of natural images? The answer is quite simple: you have **generalize ability**, which is indeed what makes you guess incorrectly in this case. The probability calculations above are on the CIFAR-10 dataset, which is just *50,000 images*. However, what you "calculate" using your intuition is actually something like this:
 
@@ -203,7 +202,7 @@ $$
 \frac{p(x_0^{(1)}\mid x_t) + p(x_0^{(1)'}\mid x_t) + p(x_0^{(1)''}\mid x_t) + \cdots}{p(x_0^{(2)}\mid x_t) + p(x_0^{(2)'}\mid x_t) + p(x_0^{(2)''}\mid x_t) + \cdots} \approx 1.
 $$
 
-Where $x_0^{(1)^\prime}, x_0^{(1)^{\prime \prime}}$ is all the images that you have seen or have imagined, that are semantically similar to the horse in the first image. You will *never* notice, for example, if the horse is shifted by 1 pixel, or rotated by 1 degree, or even with something computers can't even simulate, such as tilting the horse's head by some extent or letting it open its mouth. **However, despite all of these changes means *nothing* to you, they indeed changes the probability *significantly*.** And finally there will be a term in the "$\cdots$" that contributes significantly to both the nominator and the denominator, which are definitely not in the dataset, but are what you "actually expect".
+Where $x_0^{(1)^\prime}, x_0^{(1)^{\prime \prime}}$ is all the images that you have seen or have imagined, that are semantically similar to the truck in the first image. For example, you will *never* notice if the truck is shifted by 1 pixel, or rotated by 1 degree, or even with something computers can't even simulate, such as tilting only one wheel of the truck. **However, despite all of these changes means *nothing* to you, they indeed changes the probability *significantly*.** And finally there will be a term in the "$\cdots$" that contributes significantly to both the nominator and the denominator, which are definitely not in the dataset, but are what you "actually expect".
 
 Fortunately, however, **the neural network is on your side**: hopefully, it can capture what you have as a human, and do the exact thing as you did. In such a case, it will no longer be learning the sharply peaked distribution where the second closest neighbor has a probability factor of less than $10^{-27}$. Instead, it will try to build a "smooth" distribution, which is exactly what we discussed initially in this section.
 
