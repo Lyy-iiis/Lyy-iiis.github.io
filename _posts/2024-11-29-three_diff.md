@@ -54,7 +54,7 @@ where $\mu_\theta$ is the output of the neural net, and $\sigma_t$ is a sequence
 Thus, the model is basically **learning an average**: if we assume that our model has an infinitely fitting ability, then it will learn
 
 $$
-\mu_\theta(x_t, t) = \mathbb{E}_{p(x_{t-1}\mid x_t)}[x_{t-1}].
+\mu_\theta(x_t, t) = \mathbb{E}_{x_{t-1}\sim p(x_{t-1}\mid x_t)}[x_{t-1}].
 $$
 
 Unfortunately, this formula is actually not that intuitive, since $x_{t-1}$ and $x_t$ are mathematically intermediates and are hard to interpret. However, as we will see immediately, a simple math trick can greatly reveal the meaning of this formula.
@@ -73,7 +73,7 @@ $$
 Now, one can show that $p(x_{t-1}\mid x_t, x_0)$ is also a Gaussian distribution (see derivations in, for example, [^3]), and its mean is just a linear combination of $x_t$ and $x_0$, written as
 
 $$
-\mathbb{E}_{p(x_{t-1}\mid x_t, x_0)}[x_{t-1}] = a_t x_t + b_t x_0.
+\mathbb{E}_{x_{t-1}\sim p(x_{t-1}\mid x_t, x_0)}[x_{t-1}] = a_t x_t + b_t x_0.
 $$
 
 ($a_t$ and $b_t$ are indeed ugly; yet, they are just human-readable functions of $t$.)
@@ -81,13 +81,13 @@ $$
 Putting them all together, we can actually figure out what the neural net is learning: 
 
 $$
-\mu_\theta(x_t, t) = a_t x_t + b_t \mathbb{E}_{p(x_0\mid x_t)}[x_0].
+\mu_\theta(x_t, t) = a_t x_t + b_t \mathbb{E}_{x_0 \sim p(x_0\mid x_t)}[x_0].
 $$
 
 Since $x_t$ is just the input of the neural net, and thanks to the abundance of residual connections[^2] in neural networks nowadays, we can be confident that it is easily learned. Thus, the only challenge remaining for our network is then
 
 $$
-\mathbb{E}_{p(x_0\mid x_t)}[x_0],
+\mathbb{E}_{x_0 \sim p(x_0\mid x_t)}[x_0],
 $$
 
 which we can summarize with two words: the **posterior average**.
@@ -103,10 +103,8 @@ However, if we switch to **the model's perspective**, then things are reversed.
 As the figure shows[^4], if we fix the input $x_t$ that the model is trained at, then the $x_0$ it received throughout the training course forms a distribution. This is just the **posterior distribution** $p(x_0\mid x_t)$:
 
 $$
-p(x_0\mid x_t) = \frac{1}{Z(x_t)}p(x_t\mid x_0)p(x_0),
+p(x_0\mid x_t) = \frac{p(x_t\mid x_0)p(x_0)}{p(x_t)}.
 $$
-
-where $Z(x_t)$ is a normalization constant. 
 
 We have finally reached our conclusion: **the neural network tries to learn the posterior average among all clean images, conditioned on the input noisy image**. In some sense, this is also why the task can be well-learned by the model: the task is strongly related to the traditional **image restoration** tasks, which have been well-studied in the deep learning community in the past.
 
@@ -205,9 +203,9 @@ $$
 \frac{p(x_0^{(1)}\mid x_t) + p(x_0^{(1)'}\mid x_t) + p(x_0^{(1)''}\mid x_t) + \cdots}{p(x_0^{(2)}\mid x_t) + p(x_0^{(2)'}\mid x_t) + p(x_0^{(2)''}\mid x_t) + \cdots} \approx 1.
 $$
 
-Where $x_0^{(1)^\prime}, x_0^{(1)^{\prime \prime}}$ is all the images that you have seen, or have imagined, which are all semantically similar to the horse in the first image. You will *never* notice, for example, if the horse is shifted by 1 pixel, or rotated by 1 degree, or even with something computers can't even simulate, such as tilting the horse's head by some extent or letting it open its mouth. **However, despite all of these changes means *nothing* to you, they indeed changes the probability *significantly*.** And finally there will be a term in the "$\cdots$" that contributes significantly to both the nominator and the denominator, which are definitely not in the dataset, but are what you "actually expect".
+Where $x_0^{(1)^\prime}, x_0^{(1)^{\prime \prime}}$ is all the images that you have seen or have imagined, that are semantically similar to the horse in the first image. You will *never* notice, for example, if the horse is shifted by 1 pixel, or rotated by 1 degree, or even with something computers can't even simulate, such as tilting the horse's head by some extent or letting it open its mouth. **However, despite all of these changes means *nothing* to you, they indeed changes the probability *significantly*.** And finally there will be a term in the "$\cdots$" that contributes significantly to both the nominator and the denominator, which are definitely not in the dataset, but are what you "actually expect".
 
-Fortunately, however, the neural network is on your side: hopefully, it can capture what you have as a human, and do the exact thing as you did. In such a case, it will no longer be learning the sharply peaked distribution where the second closest neighbor has a probability factor of less than $10^{-27}$. Instead, it will try to build a "smooth" distribution, which is exactly what we discussed initially in this section.
+Fortunately, however, **the neural network is on your side**: hopefully, it can capture what you have as a human, and do the exact thing as you did. In such a case, it will no longer be learning the sharply peaked distribution where the second closest neighbor has a probability factor of less than $10^{-27}$. Instead, it will try to build a "smooth" distribution, which is exactly what we discussed initially in this section.
 
 Finally, let's return to where we started: now we understand why the distribution is neither sharply peaked nor uniformly distributed at this intermediate stage. It also becomes clearer that this part is actually the most important for the model to have a good generalization ability. Instead of the stages we discussed previously, where the model learns something we can describe mathematically (such as the denoising task or learning statistics), **the model is actually learning "features", matching the "semantic parts" of the input $x_t$ with the possible "modes" of $x_0$ that it can imagine**.
 
