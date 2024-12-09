@@ -23,10 +23,24 @@ search: false
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 阴影效果 */
 }
 
+/* 调整正文内容避免被 TOC 遮挡 */
 .page__content {
-    max-width: 120%; /* 调整为 70% 的宽度，可根据需求修改 */
-    margin: 0 auto; /* 居中对齐 */
+    margin-top: 100px; /* 给正文增加顶部空间，避免 TOC 遮挡 */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px; /* 居中显示正文内容 */
 }
+
+@media (max-width: 1300px) {
+    .toc {
+        display: none; /* 隐藏 TOC */
+    }
+
+    .page__content {
+        margin-top: 20px; /* 恢复正常的正文边距 */
+    }
+}
+
 
 /* 调整正文文字大小 */
 .page__content {
