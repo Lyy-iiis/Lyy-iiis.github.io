@@ -23,6 +23,10 @@ $$
 
 NOTE: two lines are remove here, since the website can't compile
 
+where $\hat{\mu}_t, \hat{\sigma}_t$ are simple functions (for example, in DDPM we have $\hat{\mu}_t(x)=\sqrt{1-\beta_t}x,\hat{\sigma}_t(x)=\sqrt{\beta_t}$, whereas $\beta_t$ are some hyperparameters, called the "diffusion schedule"). 
+
+The process starts with $x_0 \sim p_{\text{data}}$, and with properly selected $\beta_t$'s, we can ensure that $x_T \approx \mathcal{N}(0, I)$. We can further illustrate this in the figure below.
+
 <!-- ![](/assets/images/posts/2024_1129/1.png) -->
 ![](/assets/images/posts/2024_1129/1.png)
 
