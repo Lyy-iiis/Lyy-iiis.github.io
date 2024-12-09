@@ -21,13 +21,10 @@ $$
 p(x_t\mid x_{t-1}) = \mathcal{N}(x_t; \hat{\mu}_t(x_{t-1}), \hat{\sigma}_t(x_{t-1})^2\mathbf{I}),\qquad t=1,2,\ldots,T,
 $$ 
 
-NOTE: two lines are remove here, since the website can't compile
-
 where $\hat{\mu}_t, \hat{\sigma}_t$ are simple functions (for example, in DDPM we have $\hat{\mu}_t(x)=\sqrt{1-\beta_t}x,\hat{\sigma}_t(x)=\sqrt{\beta_t}$, whereas $\beta_t$ are some hyperparameters, called the "diffusion schedule"). 
 
 The process starts with $x_0 \sim p_{\text{data}}$, and with properly selected $\beta_t$'s, we can ensure that $x_T \approx \mathcal{N}(0, I)$. We can further illustrate this in the figure below.
 
-<!-- ![](/assets/images/posts/2024_1129/1.png) -->
 ![](/assets/images/posts/2024_1129/1.png)
 
 We can see that by adding a relatively small amount of noise at each step (denoted as a straight segment in each of the paths in the figure), the data distribution gradually transforms into the standard normal distribution.
@@ -42,7 +39,7 @@ $$
 
 which is the **essense** of the reverse process: as long as this is modeled correctly, we can then sample a Gaussian noise from $p(x_T)=\mathcal{N}(0,1)$, and then iteratively sample $x_{t-1}\sim p_\theta(x_{t-1}\mid x_t)$ to get a sample $x_0$, which matches the original data distribution $p_{\text{data}}(x_0)$ (or to make notations simpler, just $p(x_0)$).
 
-This can be also understood with the figure below, which is from the original DDPM paper[1].
+This can be also understood with the figure below, which is from the original DDPM paper [^1].
 
 ![](/assets/images/posts/2024_1129/3.png)
 
@@ -73,7 +70,7 @@ p(x_{t-1}\mid x_t) &= \int p(x_{t-1},x_0\mid x_t) \mathrm{d}x_0 \\
 \end{align*}
 $$
 
-Now, one can show that $p(x_{t-1}\mid x_t, x_0)$ is also a Gaussian distribution (see derivations in, for example, [3]), and further more its mean is just a linear combination of $x_t$ and $x_0$, written as
+Now, one can show that $p(x_{t-1}\mid x_t, x_0)$ is also a Gaussian distribution (see derivations in, for example, [^3]), and further more its mean is just a linear combination of $x_t$ and $x_0$, written as
 
 $$
 \mathbb{E}_{p(x_{t-1}\mid x_t, x_0)}[x_{t-1}] = a_t x_t + b_t x_0.
@@ -87,7 +84,7 @@ $$
 \mu_\theta(x_t, t) = a_t x_t + b_t \mathbb{E}_{p(x_0\mid x_t)}[x_0].
 $$
 
-Since $x_t$ is just the input of the neural net, and thank to the abundance of residual connections[2] in neural networks nowadays, we can be confident that it is learned with ease. Thus, the only challenge remaining for our network is then
+Since $x_t$ is just the input of the neural net, and thank to the abundance of residual connections[^2] in neural networks nowadays, we can be confident that it is learned with ease. Thus, the only challenge remaining for our network is then
 
 $$
 \mathbb{E}_{p(x_0\mid x_t)}[x_0],
@@ -103,7 +100,7 @@ However, if we switch to **the model's perspective**, then the things reverse.
 
 ![](/assets/images/posts/2024_1129/4.png)
 
-As the figure shows[4], if we fix the input $x_t$ that the model is trained at, then the $x_0$ that it has recieved throughout the training course forms a distribution. This is just the **posterior distribution** $p(x_0\mid x_t)$:
+As the figure shows[^4], if we fix the input $x_t$ that the model is trained at, then the $x_0$ that it has recieved throughout the training course forms a distribution. This is just the **posterior distribution** $p(x_0\mid x_t)$:
 
 $$
 p(x_0\mid x_t) = \frac{1}{Z(x_t)}p(x_t\mid x_0)p(x_0),
@@ -115,7 +112,7 @@ We have finally reached our conclusion: **the neural network tries to learn the 
 
 ## Diving Into the Posterior Distribution
 
-The posterior averaging formulation we discussed above is actually quite general. Not only most of the diffusion models with various schedules (e.g. DDPM[1], iDDPM[5], etc.) can be formulated as this, the emerging flow matching models[6], or 1-rectified flow[7], are also special cases of this formulation.
+The posterior averaging formulation we discussed above is actually quite general. Not only most of the diffusion models with various schedules (e.g. DDPM[^1], iDDPM[^5], etc.) can be formulated as this, the emerging flow matching models[^6], or 1-rectified flow[^7], are also special cases of this formulation.
 
 <!-- On the other hand, this simple formulation can even be sometimes *misleading*, especially when people demonstrating their examples in **low-dimension spaces** (such as fitting 2D Gaussian Mixtures). We will instead directly step into the high-dimensional space, and see what the posterior distribution actually looks like. This will in turn reveals the model's prediction, which is the average of the distribution. -->
 
@@ -137,7 +134,7 @@ $$
 p(x_0) = \frac{1}{N}\sum_{x_i\in \text{MNIST}} \delta(x_0 - x_i),\qquad N=50000.
 $$
 
-With some calculations[3], we can calculate the distribution $p(x_t\mid x_0)$:
+With some calculations[^3], we can calculate the distribution $p(x_t\mid x_0)$:
 
 $$
 p(x_t\mid x_0) = \mathcal{N}(x_t; c_t x_0, d_t^2\mathbf{I}),
@@ -204,7 +201,7 @@ $$
 \frac{p(x_0^{(1)}\mid x_t)}{p(x_0^{(2)}\mid x_t)} = \frac{\exp(-\frac{39.5^2}{2\times 0.8^2})}{\exp(-\frac{40.5^2}{2\times 0.8^2})} =e^{62.5} \approx 10^{27}. 
 $$
 
-Of course, you may not be very confortable with this hand-wavy calculation, but we also provided a notebook at [here](https://github.com/Hope7Happiness/6s978_project/TODO) for you to verify this.
+Of course, you may not be very confortable with this hand-wavy calculation, but we also provided a notebook at [here](https://github.com/Hope7Happiness/6s978_project/blob/main/TODO) for you to verify this.
 
 So, why did you get this question wrong, even if you should be a human -- a master of natural images? The answer is quite simple: you have **generalize ability**, which is indeed what make you guess incorrectly in this case. The probability calculations above are on the CIFAR-10 dataset, which is just *50,000 images*. However, what you "calculate" using your intuition is actually something like this:
 
@@ -236,15 +233,15 @@ Indeed, this question may lead to various answers, and it is hard to prove eithe
 
 We have already seen the three faces of the diffusion models. However, one can notice that the three stages are actually not that closely related, and it might be *not optimal* for a single model to try to learn all of them together. Decopling them is thus a natural idea to consider.
 
-Decopling the three tasks can indeed lead to **efficiency**. For example, we know that VAE models are fast one-step generators, but suffers from blurry images. In our language, they are quite good with the "feature learning" part, but it lacks a final "denoising" step. On the other hand, diffusion models are slow, but most of their steps are actually spend on the "feature learning" part. Also, if you have trained a diffusion model but failed to generate high-quality images, you will notice that *its generations are very clear (i.e. without noise), but only the shape is wrong*. This is very different compared with other methods such as GANs (see the image below[8]), demonstrating the strength of diffusion models on the "denoising" part.
+Decopling the three tasks can indeed lead to **efficiency**. For example, we know that VAE models are fast one-step generators, but suffers from blurry images. In our language, they are quite good with the "feature learning" part, but it lacks a final "denoising" step. On the other hand, diffusion models are slow, but most of their steps are actually spend on the "feature learning" part. Also, if you have trained a diffusion model but failed to generate high-quality images, you will notice that *its generations are very clear (i.e. without noise), but only the shape is wrong*. This is very different compared with other methods such as GANs (see the image below[^8]), demonstrating the strength of diffusion models on the "denoising" part.
 
 ![](/assets/images/posts/2024_1129/11.png)
 
-Our idea is thus combining the benefits of the two models. We use a very light-weight **VAE decoder** to generate **blurry images**. Then, we add noise to the VAE generated images, and use a **diffusion model** to re-denoise it, to get a more **high-quality image**, as shown in the figure below[9]. Note that half of the diffusion steps are not needed, so we can achieve a 2x speed up.
+Our idea is thus combining the benefits of the two models. We use a very light-weight **VAE decoder** to generate **blurry images**. Then, we add noise to the VAE generated images, and use a **diffusion model** to re-denoise it, to get a more **high-quality image**, as shown in the figure below[^9]. Note that half of the diffusion steps are not needed, so we can achieve a 2x speed up.
 
 ![](/assets/images/posts/2024_1129/12.png)
 
-Based on our experiment results[10] on the MNIST dataset, the method retains the sample quality reasonably, while achieving a 2x (or more) speed up compared with the original diffusion model, as shown in the figure below.
+Based on our experiment results[^10] on the MNIST dataset, the method retains the sample quality reasonably, while achieving a 2x (or more) speed up compared with the original diffusion model, as shown in the figure below.
 
 ![](/assets/images/posts/2024_1129/13.png)
 
@@ -256,24 +253,24 @@ Diffusion models, since their birth at around 2015, have experienced rapid devel
 
 We also sincerely hope that this post, along with the understanding of the three faces, can inspire more researchers to re-think the design of the diffusion models, and to further improve the efficiency and the quality of them in the future.
 
-## References & Foot Notes
+<!-- ## References & Foot Notes -->
 
-[1] Ho, Jonathan, Ajay Jain, and Pieter Abbeel. "Denoising diffusion probabilistic models." Advances in neural information processing systems 33 (2020): 6840-6851.
+[^1]: Ho, Jonathan, Ajay Jain, and Pieter Abbeel. "Denoising diffusion probabilistic models." Advances in neural information processing systems 33 (2020): 6840-6851.
 
-[2] He, Kaiming, et al. "Deep residual learning for image recognition." Proceedings of the IEEE conference on computer vision and pattern recognition. 2016.
+[^2]: He, Kaiming, et al. "Deep residual learning for image recognition." Proceedings of the IEEE conference on computer vision and pattern recognition. 2016.
 
-[3] Weng, Lilian. (Jul 2021). What are diffusion models? Lil’Log. https://lilianweng.github.io/posts/2021-07-11-diffusion-models/.
+[^3]: Weng, Lilian. (Jul 2021). What are diffusion models? Lil’Log. [https://lilianweng.github.io/posts/2021-07-11-diffusion-models/](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/).
 
-[4] Note: the numbers inside the figure are made up, same for the figures afterward.
+[^4]: Note: the numbers inside the figure are made up, same for the figures afterward.
 
-[5] Nichol, Alexander Quinn, and Prafulla Dhariwal. "Improved denoising diffusion probabilistic models." International conference on machine learning. PMLR, 2021.
+[^5]: Nichol, Alexander Quinn, and Prafulla Dhariwal. "Improved denoising diffusion probabilistic models." International conference on machine learning. PMLR, 2021.
 
-[6] Lipman, Yaron, et al. "Flow matching for generative modeling." arXiv preprint arXiv:2210.02747 (2022).
+[^6]: Lipman, Yaron, et al. "Flow matching for generative modeling." arXiv preprint arXiv:2210.02747 (2022).
 
-[7] Liu, Xingchao, Chengyue Gong, and Qiang Liu. "Flow straight and fast: Learning to generate and transfer data with rectified flow." arXiv preprint arXiv:2209.03003 (2022).
+[^7]: Liu, Xingchao, Chengyue Gong, and Qiang Liu. "Flow straight and fast: Learning to generate and transfer data with rectified flow." arXiv preprint arXiv:2209.03003 (2022).
 
-[8] The image generated by GAN is taken from web: https://github.com/sssingh/mnist-digit-generation-gan/blob/master/assets/generated_images_epoch_50.png
+[^8]: The image generated by GAN is taken from web: [https://github.com/sssingh/mnist-digit-generation-gan/blob/master/assets/generated_images_epoch_50.png](https://github.com/sssingh/mnist-digit-generation-gan/blob/master/assets/generated_images_epoch_50.png)
 
-[9] Image credit: https://mit-6s978.github.io/
+[^9]: Image credit: [https://mit-6s978.github.io/](https://mit-6s978.github.io/)
 
-[10] See our code at https://github.com/Hope7Happiness/6s978_project
+[^10]: See our code at [https://github.com/Hope7Happiness/6s978_project](https://github.com/Hope7Happiness/6s978_project)
