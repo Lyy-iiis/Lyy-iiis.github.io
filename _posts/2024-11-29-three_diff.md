@@ -188,10 +188,10 @@ A common guess may be around 1. The mathematical truth, however, is astonishing:
 
 - By the Gaussian Annulus Theorem, if you draw an sample from $p(x_t\mid x_0) = \mathcal{N}(x_t; 0.2 x_0, 0.8^2\mathbf{I})$, then it is likely that $\|x_t-0.2x_0\| \approx 0.8\sqrt{d}$, where $d$ is the dimension of the image;
 - Let's say, $d=32\times 32\times 3\approx 3000$. Then the typical $L_2$ distance between $0.2x_0$ and $x_t$ is on the order of 40.
-- It turns out that the first image $0.2x_0^{(1)}$ is very close to the noise $x_t$, and $0.2x_0^{(2)}$ is little bit far away. For example, we may say that the first image has a distance of 39.9; while the second has a distance of 40.1. This doesn't sound like a big difference, but if you calculate the probability:
+- It turns out that the first image $0.2x_0^{(1)}$ is closer to the noise $x_t$, with a distance of around 44.25; $0.2x_0^{(2)}$ is little bit far away, with a distance of 44.40. This doesn't sound like a big difference, but if you calculate the probability:
 
 $$
-\frac{p(x_0^{(1)}\mid x_t)}{p(x_0^{(2)}\mid x_t)} = \frac{\exp(-\frac{39.9^2}{2\times 0.8^2})}{\exp(-\frac{40.1^2}{2\times 0.8^2})} =e^{12.5} \approx 3\times 10^{5}. 
+\frac{p(x_0^{(1)}\mid x_t)}{p(x_0^{(2)}\mid x_t)} = \frac{\exp(-\frac{44.25^2}{2\times 0.8^2})}{\exp(-\frac{44.40^2}{2\times 0.8^2})} \approx e^{10.4} \approx 3\times 10^{4}. 
 $$
 
 Of course, you may not be very comfortable with this hand-wavy calculation, but we also provided a notebook at [here](https://github.com/Hope7Happiness/6s978_project/blob/main/blog_post_demo/demo.ipynb) for you to verify this numerically.
