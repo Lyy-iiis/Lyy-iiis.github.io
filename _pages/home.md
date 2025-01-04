@@ -11,7 +11,7 @@ I am an undergraduate student in MIT Class of 2028, majoring in Physics (Course 
 
 I attended high school in China, where I studied Physics competition, and won a gold medal in the 53rd International Physics Olympiad (IPhO). After that, I have taken a preparatory year at IIIS, Tsinghua University (also known as the Yao Class). During my period at IIIS, I built a foundation in Machine Learning and Deep Learning as well as proficiency in PyTorch. I also developed a solid understanding of the mathematical foundations related to computer science and artificial intelligence.
 
-Although I am just a beginner, I am eager to explore various research opportunities. I was an [UROP](https://urop.mit.edu/) student at Professor [Kaiming He](https://people.csail.mit.edu/kaiming/)'s group from September 2024 to December 2024, where I did research on generative models together with my colleagues [Zhicheng Jiang](https://jzc-2007.github.io) and Qiao Sun.
+Although I am just a beginner, I am eager to explore various research opportunities. I was an [UROP](https://urop.mit.edu/) student at Professor [Kaiming He](https://people.csail.mit.edu/kaiming/)'s group from September 2024 to December 2024, where I did research on generative models together with my colleagues [Zhicheng Jiang](https://jzc-2007.github.io) and [Qiao Sun](https://qiaosungithub.github.io).
 
 I am currently thinking on my future plans, though I don’t have a clear direction yet. I really enjoy talking with people who share similar interests or simply exchanging personal stories. Feel free to reach out if you'd like to connect!
 
