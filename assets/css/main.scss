@@ -27,8 +27,8 @@ search: false
 .page__content {
     margin-top: 100px; /* 给正文增加顶部空间，避免 TOC 遮挡 */
     margin-left: auto;
-    margin-right: auto;
-    max-width: 700px; /* 居中显示正文内容 */
+    margin-right: 50px;
+    max-width: 900px; /* 居中显示正文内容 */
 }
 
 @media (max-width: 1300px) {
