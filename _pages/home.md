@@ -18,7 +18,7 @@ Although I am still a beginner, I am eager to explore various opportunities, eit
 My resume is linked [here](/assets/pdf/cv.pdf).
 
 
-## Selected Projects
+<!-- ## Selected Projects
 
 - [**Speeding Up Diffusion Models with One-step Generators**](https://github.com/Hope7Happiness/6s978_project)
 
@@ -32,4 +32,4 @@ My resume is linked [here](/assets/pdf/cv.pdf).
 
     <p style="font-size: 18px;">In the repository, I tried to implement some classic and modern deep learning models from scratch. Instead of using extensive tricks and hyperparameter tuning, I tried to make each model implementation simple and easy to follow while giving reasonable results. I also tried to analyze what tricks are the most necessary for the model to work, so that I can find out the problem more quickly when a new model doesn't work as expected.
     <br><br>
-    The repository is still under construction, and I will keep updating it with more models and analysis.</p>
+    The repository is still under construction, and I will keep updating it with more models and analysis.</p> -->
