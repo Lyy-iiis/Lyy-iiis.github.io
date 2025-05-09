@@ -195,11 +195,12 @@
   <div class="container is-max-widescreen">
     <div class="columns is-centered">
       <div class="column is-four-fifths has-text-justified is-hidden-mobile">
+        <h2 class="title is-3 has-text-centered is-size-5-mobile title-with-lines" style="color: rgb(0, 100, 200);">Overview</h2>
+
         <h2 class="subtitle " style="line-height: 1.5;">
           <strong style="color: rgb(0, 100, 200); font-size: 1.5em;">H<sup>3</sup>DP</strong> is a novel visuomotor learning framework that explicitly incorporates hierarchical structures to strengthen the integration between visual features and action generation.
           <br><br>
-          Incorporating a <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">triply-hierarchical</strong> design in representation learning, H<sup>3</sup>DP models the relationship between action generation and visual feature extraction, which is usually neglected in prior works. H<sup>3</sup>DP can not only achieve superior performance across 44 simulation tasks, but also
-          handle long-horizon challenging manipulation tasks in cluttered real-world scenarios.
+          Incorporating a <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">triply-hierarchical</strong> design in representation learning, H<sup>3</sup>DP models the relationship between action generation and visual feature extraction, which is usually neglected in prior works. H<sup>3</sup>DP can not only achieve superior performance across 44 tasks on 5 simulation benchmarks, but also handle long-horizon challenging manipulation tasks in cluttered real-world scenarios.
         </h2>
       </div>
     </div>
@@ -223,7 +224,10 @@
 
         <div class="content has-text-justified">
           <p style="font-size: 1.1rem; line-height: 1.5;">
-            H<sup>3</sup>DP contains 3 levels of hierarchy: (1) <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">depth-aware input layering</strong> that organizes RGB-D observations based on depth information; (2) <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">multi-scale visual representations</strong> that encode semantic features at varying levels of granularity; and (3) <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">a hierarchically conditioned diffusion process</strong> that aligns the generation of coarse-to-fine actions with corresponding visual features. 
+            H<sup>3</sup>DP contains 3 levels of hierarchy:<br>
+            (1) <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">depth-aware input layering</strong> that organizes RGB-D observations based on depth information;<br>
+            (2) <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">multi-scale visual representations</strong> that encode semantic features at varying levels of granularity;<br>
+            (3) <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">a hierarchically conditioned diffusion process</strong> that aligns the generation of coarse-to-fine actions with corresponding visual features.
           </p>
         </div>
 
@@ -239,7 +243,7 @@
           <p style="font-size: 1.1rem; line-height: 1.5;">
             The hierarchical diffusion process is conditioned on the visual features at each level, allowing for a more structured and interpretable action generation process.
             <br><br>
-            H<sup>3</sup>DP is trained using a combination of imitation learning and reinforcement learning, enabling it to learn from both expert demonstrations and self-generated experiences.
+            <!-- H<sup>3</sup>DP is trained using a combination of imitation learning and reinforcement learning, enabling it to learn from both expert demonstrations and self-generated experiences. -->
           </p>
         </div>
 
