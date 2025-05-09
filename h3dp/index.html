@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">
@@ -54,6 +54,15 @@
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  p, .subtitle, .content {
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+      overflow-wrap: break-word;  /* 辅助属性 */
   }
 }
 </style>
@@ -246,11 +255,14 @@
               <!-- <p class="has-text-centered mt-2" style="font-weight: bold;">Demo Video</p> -->
             </div>
           </div>
-
-          <h2 class="subtitle " style="line-height: 1.5;">
+          <div class="content has-text-justified">
+            <p style="font-size: 1.1rem; line-height: 1.5;">
+          <!-- <h2 class="subtitle " style="line-height: 1.5;"> -->
           <strong style="color: rgb(0, 100, 200); font-size: 1.5em;">H<sup>3</sup>DP</strong> is a novel visuomotor learning framework that explicitly incorporates hierarchical structures to strengthen the integration between visual features and action generation. H<sup>3</sup>DP can not only achieve superior performance across 44 tasks on 5 simulation benchmarks, but also handle long-horizon challenging manipulation tasks in cluttered real-world scenarios.
           <!-- Incorporating a <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">triply-hierarchical</strong> design in representation learning, H<sup>3</sup>DP models the relationship between action generation and visual feature extraction, which is usually neglected in prior works.  -->
-        </h2>
+        <!-- </h2> -->
+            </p>
+          </div>
       </div>
     </div>
   </div>
