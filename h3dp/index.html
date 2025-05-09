@@ -178,17 +178,70 @@
     <nav class="tabs is-boxed is-fullwidth is-size-5">
       <ul>
         <li><a href="https://lyy-iiis.github.io/h3dp/#overview"><strong>Overview</strong></a></li>
+        <li><a href="https://lyy-iiis.github.io/h3dp/#abstract"><strong>Abstract</strong></a></li>
         <li><a href="https://lyy-iiis.github.io/h3dp/#method"><strong>Method</strong></a></li>
-        <li><a href="https://lyy-iiis.github.io/h3dp/#generalization"><strong>Real World Experiments</strong></a></li>
-        <li><a href="https://lyy-iiis.github.io/h3dp/#origin"><strong>Raw Videos</strong></a></li>
+        <li><a href="https://lyy-iiis.github.io/h3dp/#real"><strong>Real World Experiments</strong></a></li>
         <li><a href="https://lyy-iiis.github.io/h3dp/#sim"><strong>Simulation Experiments</strong></a></li>
+        <li><a href="https://lyy-iiis.github.io/h3dp/#origin"><strong>Raw Videos</strong></a></li>
       </ul>
     </nav>
   </div>
 
 </section>
 
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
 
+          <!-- Title. -->
+          <h1 class="title is-1 publication-title is-size-1-mobile">H<sup>3</sup>DP</h1>
+          <h2 class="title is-2 publication-title">Triply‑Hierarchical Diffusion Policy for<br>Visuomotor Learning</h2>
+          
+          <!-- Authors. -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://lyy-iiis.github.io/">Yiyang Lu</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              <a href="https://skyrainwind.github.io/">Yufeng Tian</a><sup>4*</sup>,</span>
+            <span class="author-block">
+              <a href="https://gemcollector.github.io/">Zhecheng Yuan</a><sup>1,2,3*</sup>,</span>
+            <span class="author-block">
+              <a href="https://peppaking8.github.io/">Xianbang Wang</a><sup>1</sup>,</span> <br>
+            <span class="author-block">
+              <a href="https://piao-0429.github.io/">Pu Hua</a><sup>1,2,3</sup>,</span>
+            <span class="author-block">
+              <a href="https://steven-xzr.github.io/">Zhengrong Xue</a><sup>1,2,3</sup>,</span>
+            <span class="author-block">
+              <a href="http://hxu.rocks/">Huazhe Xu</a><sup>1,2,3</sup></span>
+          </div>
+
+          <!-- Affiliations. -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup> Tsinghua University IIIS, <sup>2</sup> Shanghai Qi Zhi Institute, <sup>3</sup> Shanghai AI Lab</span>, <sup>4</sup> HIT</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section is-medium" id="teaser">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths has-text-justified is-hidden-mobile">
+        <div class="columns is-centered">
+            <figure class="image">
+              <img src="./H3DP_files/teaser.jpg" alt="H3DP">
+            </figure>
+        </div>
+       </div>
+    </div>
+  </div>
+  
+</section>  -->
 
 
 <section class="section is-medium" id="overview">
@@ -197,19 +250,42 @@
       <div class="column is-four-fifths has-text-justified is-hidden-mobile">
         <h2 class="title is-3 has-text-centered is-size-5-mobile title-with-lines" style="color: rgb(0, 100, 200);">Overview</h2>
 
-        <h2 class="subtitle " style="line-height: 1.5;">
-          <strong style="color: rgb(0, 100, 200); font-size: 1.5em;">H<sup>3</sup>DP</strong> is a novel visuomotor learning framework that explicitly incorporates hierarchical structures to strengthen the integration between visual features and action generation.
-          <br><br>
-          Incorporating a <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">triply-hierarchical</strong> design in representation learning, H<sup>3</sup>DP models the relationship between action generation and visual feature extraction, which is usually neglected in prior works. H<sup>3</sup>DP can not only achieve superior performance across 44 tasks on 5 simulation benchmarks, but also handle long-horizon challenging manipulation tasks in cluttered real-world scenarios.
+          <div class="column is-centered">
+            <div class="video-container has-text-centered">
+              <video autoplay="" muted="" loop="" playsinline="" height="100%" style="width: 100%;">
+                <source src="./videos/demo.mp4" type="video/mp4">
+              </video>
+              <!-- <p class="has-text-centered mt-2" style="font-weight: bold;">Demo Video</p> -->
+            </div>
+          </div>
+
+          <h2 class="subtitle " style="line-height: 1.5;">
+          <strong style="color: rgb(0, 100, 200); font-size: 1.5em;">H<sup>3</sup>DP</strong> is a novel visuomotor learning framework that explicitly incorporates hierarchical structures to strengthen the integration between visual features and action generation. H<sup>3</sup>DP can not only achieve superior performance across 44 tasks on 5 simulation benchmarks, but also handle long-horizon challenging manipulation tasks in cluttered real-world scenarios.
+          <!-- Incorporating a <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">triply-hierarchical</strong> design in representation learning, H<sup>3</sup>DP models the relationship between action generation and visual feature extraction, which is usually neglected in prior works.  -->
         </h2>
       </div>
     </div>
+  </div>
+</section>
 
+<section class="section is-medium" id="abstract">
+  <div class="container is-max-widescreen">
     <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <figure class="image">
-          <img src="./H3DP_files/teaser.jpg" alt="H3DP">
-        </figure>
+      <div class="column is-four-fifths has-text-justified is-hidden-mobile">
+        <h2 class="title is-3 has-text-centered is-size-5-mobile title-with-lines" style="color: rgb(0, 100, 200);">Abstract</h2>
+        <div class="columns is-centered">
+            <figure class="image">
+              <img src="./H3DP_files/teaser.jpg" alt="H3DP">
+            </figure>
+        </div>
+        <div class="content has-text-justified">
+          <p style="font-size: 1.1rem; line-height: 1.5;">
+            Visuomotor policy learning has witnessed substantial progress in robotic manipulation, with recent approaches predominantly relying on generative models to model the action distribution. However, these methods often overlook the critical coupling between visual perception and action prediction. In this work, we introduce <strong font-size: 1.05em;">Triply-Hierarchical Diffusion Policy (H<sup>3</sup>DP)</strong>, a novel visuomotor learning framework that explicitly incorporates hierarchical structures to strengthen the integration between visual features and action generation. H<sup>3</sup>DP contains <strong font-size: 1.05em;">3</strong> levels of hierarchy: (1) depth-aware input layering that organizes RGB-D observations based on depth information; (2) multi-scale visual representations that encode semantic features at varying levels of granularity; and (3) a hierarchically conditioned diffusion process that aligns the generation of coarse-to-fine actions with corresponding visual features. Extensive experiments demonstrate that H<sup>3</sup>DP yields a <strong font-size: 1.05em;">27.5%</strong> average relative improvement over baselines across <strong font-size: 1.05em;">44</strong> simulation tasks and achieves superior performance in <strong font-size: 1.05em;">4</strong> challenging bimanual real-world manipulation tasks.
+          </p>
+        </div>
+
+      </div>
+    </div>
       </div>
     </div>
   </div>
@@ -238,32 +314,13 @@
             </figure>
           </div>
         </div>
-
-        <div class="content has-text-justified">
-          <p style="font-size: 1.1rem; line-height: 1.5;">
-            The hierarchical diffusion process is conditioned on the visual features at each level, allowing for a more structured and interpretable action generation process.
-            <br><br>
-            <!-- H<sup>3</sup>DP is trained using a combination of imitation learning and reinforcement learning, enabling it to learn from both expert demonstrations and self-generated experiences. -->
-          </p>
-        </div>
-
-        
-          <div class="column is-centered">
-            <div class="video-container has-text-centered">
-              <video autoplay="" muted="" loop="" playsinline="" height="100%" style="width: 100%;">
-                <source src="./videos/demo.mp4" type="video/mp4">
-              </video>
-              <p class="has-text-centered mt-2" style="font-weight: bold;">Demo Video</p>
-            </div>
-          </div>
-
       </div>
     </div>
   </div>
 </section>
 
 
-<section class="section is-small" id="generalization">
+<section class="section is-small" id="real">
   <div class="container is-max-widescreen">
     <div class="columns is-centered">
       <div class="column is-four-fifths is-centered">
@@ -497,6 +554,106 @@
   </div>
 </section>
 
+
+<section class="section is-small" id="sim">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths is-centered">
+        <h2 class="title is-3 has-text-centered is-size-5-mobile title-with-lines" style="color: rgb(0, 100, 200);">Simulation Experiments</h2>
+
+        <div class="content has-text-justified">
+          <p style="font-size: 1.1rem; line-height: 1.5;">
+            To sufficiently verify the effectiveness of H<sup>3</sup>DP, we evaluate H<sup>3</sup>DP on 5 simulation benchmarks, with a total of <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">44</strong> tasks. The results are shown in the table, with some task examples displayed.
+          </p>
+        </div>
+
+        <div class="columns is-centered">
+            <figure class="image">
+              <img src="./H3DP_files/sim-results.jpg" alt="H3DP">
+            </figure>
+        </div>
+        
+        <div class="columns is-multiline">
+          
+          <div class="column is-th">
+            <div class="video-container has-text-centered">
+              <video autoplay="" muted="" loop="" playsinline="" height="100%" style="width: 100%; height:100%; object-fit: fill">
+                <source src="./videos/sim/2.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          
+          <div class="column is-th">
+            <div class="video-container has-text-centered">
+              <video autoplay="" muted="" loop="" playsinline="" height="100%" style="width: 100%;">
+                <source src="./videos/sim/5.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          
+          <div class="column is-th">
+            <div class="video-container has-text-centered">
+              <video autoplay="" muted="" loop="" playsinline="" height="100%" style="width: 100%;">
+                <source src="./videos/sim/7.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="column is-th">
+            <div class="video-container has-text-centered">
+              <video autoplay="" muted="" loop="" playsinline="" height="100%" style="width: 100%;">
+                <source src="./videos/sim/1.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          
+          <div class="column is-th">
+            <div class="video-container has-text-centered">
+              <video autoplay="" muted="" loop="" playsinline="" height="100%" style="width: 100%;">
+                <source src="./videos/sim/13.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          
+          <div class="column is-th">
+            <div class="video-container has-text-centered">
+              <video autoplay="" muted="" loop="" playsinline="" height="100%" style="width: 100%;">
+                <source src="./videos/sim/12.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="column is-th">
+            <div class="video-container has-text-centered">
+              <video autoplay="" muted="" loop="" playsinline="" height="100%" style="width: 100%;">
+                <source src="./videos/sim/3.mov" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          
+          <div class="column is-th">
+            <div class="video-container has-text-centered">
+              <video autoplay="" muted="" loop="" playsinline="" height="100%" style="width: 100%;">
+                <source src="./videos/sim/6.mov" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          
+          <div class="column is-th">
+            <div class="video-container has-text-centered">
+              <video autoplay="" muted="" loop="" playsinline="" height="100%" style="width: 100%;">
+                <source src="./videos/sim/8.mov" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section is-small" id="origin">
   <div class="container is-max-widescreen">
     <div class="columns is-centered">
@@ -681,82 +838,6 @@
 </section>
 
 
-<section class="section is-small" id="sim">
-  <div class="container is-max-widescreen">
-    <div class="columns is-centered">
-      <div class="column is-four-fifths is-centered">
-        <h2 class="title is-3 has-text-centered is-size-5-mobile title-with-lines" style="color: rgb(0, 100, 200);">Simulation Experiments</h2>
-
-        <div class="content has-text-justified">
-          <p style="font-size: 1.1rem; line-height: 1.5;">
-            To sufficiently verify the effectiveness of H<sup>3</sup>DP, we evaluate H<sup>3</sup>DP on 5 simulation benchmarks, with a total of <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">44</strong> tasks. The results are shown in the table, with some task examples displayed.
-          </p>
-        </div>
-
-        <div class="columns is-centered">
-          <div class="column is-four-fifths">
-            <figure class="image">
-              <img src="./H3DP_files/sim-results.jpg" alt="H3DP">
-            </figure>
-          </div>
-        </div>
-        
-        <div class="columns is-multiline">
-          
-          <div class="column is-th">
-            <div class="video-container has-text-centered">
-              <video autoplay="" muted="" loop="" playsinline="" height="100%" style="width: 100%; height:100%; object-fit: fill">
-                <source src="./videos/sim/2.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          
-          <div class="column is-th">
-            <div class="video-container has-text-centered">
-              <video autoplay="" muted="" loop="" playsinline="" height="100%" style="width: 100%;">
-                <source src="./videos/sim/5.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          
-          <div class="column is-th">
-            <div class="video-container has-text-centered">
-              <video autoplay="" muted="" loop="" playsinline="" height="100%" style="width: 100%;">
-                <source src="./videos/sim/7.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          <div class="column is-th">
-            <div class="video-container has-text-centered">
-              <video autoplay="" muted="" loop="" playsinline="" height="100%" style="width: 100%;">
-                <source src="./videos/sim/1.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          
-          <div class="column is-th">
-            <div class="video-container has-text-centered">
-              <video autoplay="" muted="" loop="" playsinline="" height="100%" style="width: 100%;">
-                <source src="./videos/sim/13.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          
-          <div class="column is-th">
-            <div class="video-container has-text-centered">
-              <video autoplay="" muted="" loop="" playsinline="" height="100%" style="width: 100%;">
-                <source src="./videos/sim/12.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          
-        </div>
-
-
-      </div>
-    </div>
-  </div>
-</section>
 
 <footer class="footer">
   <div class="container is-max-widescreen">
