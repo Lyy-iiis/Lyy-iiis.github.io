@@ -225,22 +225,6 @@
   </div>
 </section>
 
-<!-- <section class="section is-medium" id="teaser">
-  <div class="container is-max-widescreen">
-    <div class="columns is-centered">
-      <div class="column is-four-fifths has-text-justified is-hidden-mobile">
-        <div class="columns is-centered">
-            <figure class="image">
-              <img src="./H3DP_files/teaser.jpg" alt="H3DP">
-            </figure>
-        </div>
-       </div>
-    </div>
-  </div>
-  
-</section>  -->
-
-
 <section class="section is-small" id="overview">
   <div class="container is-max-widescreen">
     <div class="columns is-centered">
@@ -280,7 +264,7 @@
         </div>
         <div class="content has-text-justified">
           <p style="font-size: 1.1rem; line-height: 1.5;">
-            Visuomotor policy learning has witnessed substantial progress in robotic manipulation, with recent approaches predominantly relying on generative models to model the action distribution. However, these methods often overlook the critical coupling between visual perception and action prediction. In this work, we introduce <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">Triply-Hierarchical Diffusion Policy (H<sup>3</sup>DP)</strong>, a novel visuomotor learning framework that explicitly incorporates hierarchical structures to strengthen the integration between visual features and action generation. H<sup>3</sup>DP contains <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">3</strong> levels of hierarchy: (1) depth-aware input layering that organizes RGB-D observations based on depth information; (2) multi-scale visual representations that encode semantic features at varying levels of granularity; and (3) a hierarchically conditioned diffusion process that aligns the generation of coarse-to-fine actions with corresponding visual features. Extensive experiments demonstrate that H<sup>3</sup>DP yields a <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">27.5%</strong> average relative improvement over baselines across <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">44</strong> simulation tasks and achieves superior performance in <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">4</strong> challenging bimanual real-world manipulation tasks.
+            Visuomotor policy learning has witnessed substantial progress in robotic manipulation, with recent approaches predominantly relying on generative models to model the action distribution. However, these methods often overlook the critical coupling between visual perception and action prediction. In this work, we introduce <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">Triply-Hierarchical Diffusion Policy (H<sup>3</sup>DP)</strong>, a novel visuomotor learning framework that explicitly incorporates hierarchical structures to strengthen the integration between visual features and action generation. H<sup>3</sup>DP contains <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">3</strong> levels of hierarchy: (1) depth-aware input layering that organizes RGB-D observations based on depth information; (2) multi-scale visual representations that encode semantic features at varying levels of granularity; and (3) a hierarchically conditioned diffusion process that aligns the generation of coarse-to-fine actions with corresponding visual features. Extensive experiments demonstrate that H<sup>3</sup>DP yields a <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">+27.5%</strong> average relative improvement over baselines across <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">44</strong> simulation tasks and achieves superior performance in <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">4</strong> challenging bimanual real-world manipulation tasks.
           </p>
         </div>
 
@@ -300,10 +284,10 @@
 
         <div class="content has-text-justified">
           <p style="font-size: 1.1rem; line-height: 1.5;">
-            H<sup>3</sup>DP contains 3 levels of hierarchy:<br>
-            (1) <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">depth-aware input layering</strong> that organizes RGB-D observations based on depth information;<br>
-            (2) <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">multi-scale visual representations</strong> that encode semantic features at varying levels of granularity;<br>
-            (3) <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">a hierarchically conditioned diffusion process</strong> that aligns the generation of coarse-to-fine actions with corresponding visual features.
+            H<sup>3</sup>DP employs three hierarchical structures to enhance the policy's understanding of visual input and predict more accurate action distributions:<br>
+            (1) <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">Depth-aware Layering</strong> discretizes the RGB-D image intro multiple layers to improve the policy's ability to distinguish and interpret foreground-background variations<br>
+            (2) <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">Multi-Scale Visual Representations</strong>, wherein coarse-grained features capture global contextual information, while fine-grained features encode detailed scene attributes;<br>
+            (3) <strong style="color: rgb(0, 100, 200); font-size: 1.05em;"> Hierarchical Action Generation</strong> utilizes representations at different scales to generate actions in a coarse-to-fine manner, strengthening the correlation between action and visual representations.
           </p>
         </div>
 
@@ -387,7 +371,7 @@
             </p>
           </div>
 
-        <h2 class="title is-3 has-text-centered is-size-3-mobile title-with-lines" style="color: rgb(0, 130, 200);">Generalization</h2>
+        <h2 class="title is-3 has-text-centered is-size-3-mobile title-with-lines" style="color: rgb(0, 100, 200);">Generalization</h2>
 
         <div class="content has-text-justified">
           <p style="font-size: 1.1rem; line-height: 1.5;">
@@ -661,7 +645,41 @@
           
         </div>
 
+        <div class="has-text-centered" style="margin: 2rem 0;">
+          <button id="show-more-sims" class="button is-link is-medium" data-initialized="true" data-inline-initialized="true">
+            <span><strong>Hide Simulation Results</strong></span>
+            <span class="icon">
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
 
+        <div id="additional-sims" class="columns is-multiline" style="display: flex; flex-wrap: wrap;">
+          
+          <div class="content has-text-justified">
+            <p style="font-size: 1.1rem; line-height: 1.5;">
+              <strong style="color: rgb(0, 100, 200); font-size: 1.2em;">Entire Success Rates.</strong> We present the simulation results for each task in the following.  For each experiment, we report the average success rate over <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">3</strong> different random seeds. The final average result is obtained by averaging across all benchmarks.
+            </p>
+          </div>
+
+          <div class="columns is-centered">
+            <figure class="image">
+              <img src="./H3DP_files/sim-total.png" alt="H3DP">
+            </figure>
+          </div>
+
+          <div class="content has-text-justified">
+            <p style="font-size: 1.1rem; line-height: 1.5;">
+              <strong style="color: rgb(0, 100, 200); font-size: 1.2em;">Training Curve.</strong> We also provide the training progress of 4 algorithms on <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">12 various tasks</strong> across 3 different benchmarks. The selected tasks span a range of difficulties and are included <strong style="color: rgb(0, 100, 200); font-size: 1.05em;">without cherry picking</strong> to provide an unbiased view of each algorithm. 
+            </p>
+          </div>
+          
+          <div class="columns is-centered">
+            <figure class="image">
+              <img src="./H3DP_files/train_curve.jpg" alt="H3DP">
+            </figure>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -870,6 +888,50 @@
 
 <!-- 添加内联JavaScript确保按钮功能在GitHub Pages上正常工作 -->
 <script>
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      const showMoreButton = document.getElementById('show-more-sims');
+      const additionalDemos = document.getElementById('additional-sims');
+      
+      if (showMoreButton && additionalDemos) {
+        console.log('Inline script: initializing button');
+        
+        // 确保初始状态正确
+        additionalDemos.style.display = 'none';
+        
+        // 如果按钮还没有事件监听器，添加一个
+        if (!showMoreButton.hasAttribute('data-inline-initialized')) {
+          showMoreButton.setAttribute('data-inline-initialized', 'true');
+          
+          showMoreButton.addEventListener('click', function() {
+            console.log('Inline script: button clicked');
+            const computedStyle = window.getComputedStyle(additionalDemos);
+            const isHidden = computedStyle.display === 'none';
+            
+            additionalDemos.style.display = isHidden ? 'flex' : 'none';
+            
+            const buttonText = showMoreButton.querySelector('span:first-child');
+            const buttonIcon = showMoreButton.querySelector('.fas');
+            
+            if (buttonText && buttonIcon) {
+              if (isHidden) {
+                buttonText.innerHTML = '<strong>Hide Simulation Results</strong>';
+                buttonIcon.classList.remove('fa-chevron-down');
+                buttonIcon.classList.add('fa-chevron-up');
+              } else {
+                buttonText.innerHTML = '<strong>Entire Simulation Results</strong>';
+                buttonIcon.classList.remove('fa-chevron-up');
+                buttonIcon.classList.add('fa-chevron-down');
+              }
+            }
+          });
+        }
+      } else {
+        console.error('Inline script: Button or additional demos section not found');
+      }
+    }, 1000); // 延迟1秒确保DOM完全加载
+  });
+
   // 确保页面完全加载后执行
   window.addEventListener('load', function() {
     setTimeout(function() {
