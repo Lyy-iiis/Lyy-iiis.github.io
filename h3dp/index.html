@@ -62,7 +62,7 @@
       hyphens: auto;
       -webkit-hyphens: auto;
       -ms-hyphens: auto;
-      overflow-wrap: break-word;  /* 辅助属性 */
+      overflow-wrap: break-word;
   }
 }
 </style>
@@ -92,9 +92,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./H3DP_files/index.css">
 
-  <!-- 添加额外的样式，确保行间距在GitHub Pages上正确显示 -->
   <style>
-    /* 确保行间距样式被优先应用 */
     .subtitle.is-1.publication-title {
       line-height: 1.2 !important;
       max-height: none !important;
@@ -113,7 +111,6 @@
       line-height: 1.7 !important;
     }
     
-    /* 防止GitHub Pages上的样式覆盖 */
     @media screen and (min-width: 769px) {
       .subtitle.is-1.publication-title {
         line-height: 1.2 !important;
@@ -886,7 +883,6 @@
   </div>
 </footer>
 
-<!-- 添加内联JavaScript确保按钮功能在GitHub Pages上正常工作 -->
 <script>
   window.addEventListener('load', function() {
     setTimeout(function() {
@@ -896,10 +892,8 @@
       if (showMoreButton && additionalDemos) {
         console.log('Inline script: initializing button');
         
-        // 确保初始状态正确
         additionalDemos.style.display = 'none';
         
-        // 如果按钮还没有事件监听器，添加一个
         if (!showMoreButton.hasAttribute('data-inline-initialized')) {
           showMoreButton.setAttribute('data-inline-initialized', 'true');
           
@@ -929,10 +923,9 @@
       } else {
         console.error('Inline script: Button or additional demos section not found');
       }
-    }, 1000); // 延迟1秒确保DOM完全加载
+    }, 1000);
   });
 
-  // 确保页面完全加载后执行
   window.addEventListener('load', function() {
     setTimeout(function() {
       const showMoreButton = document.getElementById('show-more-demos');
@@ -941,10 +934,8 @@
       if (showMoreButton && additionalDemos) {
         console.log('Inline script: initializing button');
         
-        // 确保初始状态正确
         additionalDemos.style.display = 'none';
         
-        // 如果按钮还没有事件监听器，添加一个
         if (!showMoreButton.hasAttribute('data-inline-initialized')) {
           showMoreButton.setAttribute('data-inline-initialized', 'true');
           
@@ -974,7 +965,7 @@
       } else {
         console.error('Inline script: Button or additional demos section not found');
       }
-    }, 1000); // 延迟1秒确保DOM完全加载
+    }, 1000);
   });
 </script>
 
