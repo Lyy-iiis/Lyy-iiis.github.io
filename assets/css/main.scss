@@ -25,7 +25,7 @@ search: false
 
 /* 调整正文内容避免被 TOC 遮挡 */
 .page__content {
-    margin-top: 100px; /* 给正文增加顶部空间，避免 TOC 遮挡 */
+    margin-top: 0; /* 移除顶部空间 */
     margin-left: auto;
     margin-right: 50px;
     max-width: 900px; /* 居中显示正文内容 */

@@ -5,13 +5,11 @@ author_profile: true
 permalink: /
 ---
 
-# About Me
+## About Me
 
-I am a sophomore majoring in Computer Science at the [IIIS, Tsinghua University](https://iiis.tsinghua.edu.cn/). I am currently an intern at [MIT CSAIL](https://www.csail.mit.edu/).
+I am a sophomore majoring in Computer Science at the [IIIS, Tsinghua University](https://iiis.tsinghua.edu.cn/). Currently, I am  an intern at [MIT CSAIL](https://www.csail.mit.edu/), supervised by Professor [Kaiming He](https://people.csail.mit.edu/kaiming/). My research interests lie in computer vision and deep generative models. Previously, I am fortunate to conduct research under the supervision of Professor [Huazhe Xu](https://hxu.rocks/) at THU.
 
-I am an undergraduate researcher in computer vision and deep generative models supervised by Professor [Kaiming He](https://people.csail.mit.edu/kaiming/) at MIT. Previously, I am fortunate to conduct research under the supervision of Professor [Huazhe Xu](https://hxu.rocks/) at THU.
-
-Before entering college, I competed in the Physics Olympiad during high school and won a gold medal in the 39th Chinese Physics Olympiad (CPhO). Afterward, I spent one preparatory year at IIIS, Tsinghua University, where I built a solid foundation in the mathematical principles underlying computer science and deep learning, as well as proficiency in practical tools such as PyTorch.
+Before entering college, I competed in the Physics Olympiad during high school and won a gold medal in the 39th CPhO. Afterward, I spent one preparatory year at IIIS, Tsinghua University, where I built a solid foundation in the mathematical principles underlying computer science and deep learning.
 
 Although I am still early in my research journey, I am eager to explore opportunities in both academia and industry. I also enjoy connecting with people who share similar interests and discussing everything from research ideas to personal experiences. Feel free to reach out if you’d like to connect!
 
@@ -108,5 +106,56 @@ My resume is linked [here](/assets/pdf/cv.pdf).
              <a href="https://arxiv.org/pdf/2505.07819" style="text-decoration: none; color: blue;">[Paper]</a>
              <a href="https://arxiv.org/abs/2505.07819" style="text-decoration: none; color: blue;">[arXiv]</a>
         </p>
+    </div>
+</div>
+
+## Selected Awards
+
+<div class="row">
+    <div class="column" style="display: inline-block; vertical-align: middle; width: 25%;">
+        <div style="text-align: center;">
+            <img src="/assets/images/thu.png" alt="Tsinghua University" style="width: 40%;">
+        </div>
+    </div>
+    <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
+        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>National Scholarship</b></p>
+        <div style="height: 2px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 10px;">Top Scholarship in China</p>
+        <div style="height: 0px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0;">China, 2025</p>
+    </div>
+</div>
+
+<div style="height: 20px;"></div>
+
+<div class="row">
+    <div class="column" style="display: inline-block; vertical-align: middle; width: 25%;">
+        <div style="text-align: center;">
+            <img src="/assets/images/thu.png" alt="Tsinghua University" style="width: 40%;">
+        </div>
+    </div>
+    <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
+        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>Freshman Scholarship</b></p>
+        <div style="height: 2px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 10px;">Scholarship for Outstanding Freshmen</p>
+        <div style="height: 0px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0;">Tsinghua University, 2024</p>
+    </div>
+</div>
+
+<div style="height: 20px;"></div>
+
+<div class="row">
+    <div class="column" style="display: inline-block; vertical-align: middle; width: 25%;">
+        <div style="text-align: center;">
+            <img src="/assets/images/cpho.png" alt="Tsinghua University" style="width: 100%;">
+        </div>
+    </div>
+    <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
+        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>The 39 th Chinese Physics Olympiad (CPhO)</b></p>
+        <div style="height: 2px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 10px;">Gold Medal (Top 10)</p>
+        <div style="height: 0px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0;">Chinese Physics Olympiad, 2022</p>
     </div>
 </div>
