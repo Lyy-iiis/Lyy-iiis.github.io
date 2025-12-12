@@ -17,6 +17,25 @@ Although I am still early in my research journey, I am eager to explore opportun
 
 My resume is linked [here](/assets/pdf/cv.pdf).
 
+## Education
+
+<div class="row">
+    <div class="column" style="display: inline-block; vertical-align: middle; width: 25%;">
+        <div style="text-align: center;">
+            <img src="/assets/images/iiis.png" alt="Tsinghua University" style="width: 60%;">
+        </div>
+    </div>
+    <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
+        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>IIIS, Tsinghua University</b></p>
+        <div style="height: 2px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 10px;">Undergraduate Student</p>
+        <div style="height: 0px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0;">Beijing, China, Sep 2024 - Present</p>
+        <div style="height: 0px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; color: gray;">Major GPA: 4.00/4.00, with 13/20 A+ (<span style="color: #E64545;">Top ~5%</span>) and 7/20 A (<span style="color: #FF8A00;">Top ~25%</span>)</p>
+    </div>
+</div>
+
 ## Publications
 
 <div class="row">
