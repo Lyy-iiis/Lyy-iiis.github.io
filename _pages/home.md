@@ -21,6 +21,31 @@ My resume is linked [here](/assets/pdf/cv.pdf).
 
 <div class="row">
     <div class="column" style="display: inline-block; vertical-align: top; width: 25%;">
+        <a href="/assets/images/publications/biflow.png"><img src="/assets/images/publications/biflow.png"></a>
+    </div>
+    <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
+        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>Bidirectional Normalizing Flow: From Data to Noise and Back</b></p>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 10px;"> 
+                <u><b>Yiyang Lu*†</b></u>, 
+                <span style="color: gray;">Qiao Sun*†</span>,
+                <span style="color: gray;">Xianbang Wang*</span>,
+                <span style="color: gray;">Zhicheng Jiang</span>,
+                <span style="color: gray;">Hanhong Zhao</span>,
+                <span style="color: gray;">Kaiming He</span>
+        </p>
+        <p style="display: inline-block; vertical-align: top; font-size: 12px; margin-top: 1px; color: gray;">* Equal technical contribution, † Project lead</p>
+        <div style="height: 1px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-top: 5px;">
+             <a href="https://arxiv.org/pdf/2512.10953" style="text-decoration: none; color: blue;">[Paper]</a>
+             <a href="https://arxiv.org/abs/2512.10953" style="text-decoration: none; color: blue;">[arXiv]</a>
+        </p>
+    </div>
+</div>
+
+<div style="height: 20px;"></div>
+
+<div class="row">
+    <div class="column" style="display: inline-block; vertical-align: top; width: 25%;">
         <a href="/assets/images/publications/imf.png"><img src="/assets/images/publications/imf.png"></a>
     </div>
     <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
@@ -40,6 +65,8 @@ My resume is linked [here](/assets/pdf/cv.pdf).
         </p>
     </div>
 </div>
+
+<div style="height: 20px;"></div>
 
 <div class="row">
     <div class="column" style="display: inline-block; vertical-align: top; width: 25%;">

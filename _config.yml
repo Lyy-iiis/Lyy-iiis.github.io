@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Yiyang Lu"
-  avatar           : "/assets/images/photo.jpeg"
+  avatar           : "/assets/images/photo.jpg"
   bio              : "an undergraduate student at Tsinghua University"
   location         : "Beijing, China"
   # email            : "zhh24@mit.edu"
