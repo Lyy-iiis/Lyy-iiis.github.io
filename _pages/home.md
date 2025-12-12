@@ -7,9 +7,9 @@ permalink: /
 
 ## About Me
 
-I am a sophomore majoring in Computer Science at the [IIIS, Tsinghua University](https://iiis.tsinghua.edu.cn/). Currently, I am  an intern at [MIT CSAIL](https://www.csail.mit.edu/), supervised by Professor [Kaiming He](https://people.csail.mit.edu/kaiming/). My research interests lie in computer vision and deep generative models. Previously, I am fortunate to conduct research under the supervision of Professor [Huazhe Xu](https://hxu.rocks/) at THU.
+I am a sophomore majoring in Computer Science at the [IIIS, Tsinghua University](https://iiis.tsinghua.edu.cn/). Currently, I am  an intern at [MIT CSAIL](https://www.csail.mit.edu/), supervised by Professor [Kaiming He](https://people.csail.mit.edu/kaiming/). My research interests lie in computer vision and deep generative models. I am particularly fascinated by simple yet effective model designs.
 
-Before entering college, I competed in the Physics Olympiad during high school and won a gold medal in the 39th CPhO. Afterward, I spent one preparatory year at IIIS, Tsinghua University, where I built a solid foundation in the mathematical principles underlying computer science and deep learning.
+Before entering college, I competed in the Physics Olympiad during high school and won a gold medal in the 39th CPhO. Afterward, I spent one preparatory year at IIIS, Tsinghua University, where I built a solid foundation in the mathematical principles underlying computer science and deep learning. I am fortunate to conduct research under the supervision of Professor [Huazhe Xu](https://hxu.rocks/) during this period.
 
 Although I am still early in my research journey, I am eager to explore opportunities in both academia and industry. I also enjoy connecting with people who share similar interests and discussing everything from research ideas to personal experiences. Feel free to reach out if you’d like to connect!
 

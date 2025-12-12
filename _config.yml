@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Yiyang Lu (陆伊炀)"
+title                    : "Yiyang Lu 陆伊炀"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Yiyang Lu's personal website"
@@ -115,9 +115,8 @@ analytics:
 author:
   name             : "Yiyang Lu"
   avatar           : "/assets/images/photo.jpg"
-  bio              : "an undergraduate student at Tsinghua University"
+  bio              : "Undergraduate student at Tsinghua University"
   location         : "Beijing, China"
-  # email            : "zhh24@mit.edu"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
