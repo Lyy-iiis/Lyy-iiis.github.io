@@ -30,11 +30,36 @@ My resume is linked [here](/assets/pdf/cv.pdf).
         <div style="height: 0px;"></div>
         <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0;">Beijing, China, Sep 2024 - Present</p>
         <div style="height: 0px;"></div>
-        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; color: gray;">Major GPA: 4.00/4.00, with 13/20 A+ (<span style="color: #E64545;">Top ~5%</span>) and 7/20 A (<span style="color: #FF8A00;">Top ~25%</span>)</p>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; color: gray;">Major GPA: 4.00/4.00, with 13/21 A+ (<span style="color: #E64545;">Top ~5%</span>) and 8/21 A (<span style="color: #FF8A00;">Top ~25%</span>)</p>
     </div>
 </div>
 
 ## Publications
+
+<div class="row">
+    <div class="column" style="display: inline-block; vertical-align: top; width: 25%;">
+        <a href="/assets/images/publications/pmf.png"><img src="/assets/images/publications/pmf.png"></a>
+    </div>
+    <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
+        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>One-step Latent-free Image Generation with Pixel Mean Flows</b></p>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 10px;">
+                <u><b>Yiyang Lu*</b></u>, 
+                <span style="color: gray;">Susie Lu*</span>,
+                <span style="color: gray;">Qiao Sun*</span>,
+                <span style="color: gray;">Hanhong Zhao*</span>,
+                <span style="color: gray;">Zhicheng Jiang</span>,
+                <span style="color: gray;">Xianbang Wang</span>,
+                <span style="color: gray;">Tianhong Li</span>,
+                <span style="color: gray;">Zhengyang Geng</span>,
+                <span style="color: gray;">Kaiming He</span>
+        </p>
+        <br>
+        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-top: 10px;">
+             <a href="https://arxiv.org/pdf/2601.22158" style="text-decoration: none; color: blue;">[Paper]</a>
+             <a href="https://arxiv.org/abs/2601.22158" style="text-decoration: none; color: blue;">[arXiv]</a>
+        </p>
+    </div>
+</div>
 
 <div class="row">
     <div class="column" style="display: inline-block; vertical-align: top; width: 25%;">
@@ -79,6 +104,7 @@ My resume is linked [here](/assets/pdf/cv.pdf).
         <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-top: 10px;">
              <a href="https://arxiv.org/pdf/2512.02012" style="text-decoration: none; color: blue;">[Paper]</a>
              <a href="https://arxiv.org/abs/2512.02012" style="text-decoration: none; color: blue;">[arXiv]</a>
+             <a href="https://github.com/Lyy-iiis/imeanflow" style="text-decoration: none; color: blue;">[Code]</a>
         </p>
     </div>
 </div>
