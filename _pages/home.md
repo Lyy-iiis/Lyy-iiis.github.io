@@ -13,7 +13,7 @@ Before entering college, I competed in the Physics Olympiad during high school a
 
 Although I am still early in my research journey, I am eager to explore opportunities in both academia and industry. I also enjoy connecting with people who share similar interests and discussing everything from research ideas to personal experiences. Feel free to reach out if you’d like to connect!
 
-My resume is linked [here](/assets/pdf/cv.pdf).
+<!-- My resume is linked [here](/assets/pdf/cv.pdf). -->
 
 ## Education
 
@@ -126,8 +126,8 @@ My resume is linked [here](/assets/pdf/cv.pdf).
                 <span style="color: gray;">Zhengrong Xue</span>,
                 <span style="color: gray;">Huazhe Xu</span>
         </p>
-        <br>
-        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-top: 10px;">
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0;">International Conference on Learning Representations (ICLR) 2026</p>
+        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-top: 0;">
              <a href="https://lyy-iiis.github.io/h3dp/" style="text-decoration: none; color: blue;">[Project Page]</a>
              <a href="https://arxiv.org/pdf/2505.07819" style="text-decoration: none; color: blue;">[Paper]</a>
              <a href="https://arxiv.org/abs/2505.07819" style="text-decoration: none; color: blue;">[arXiv]</a>
