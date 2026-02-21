@@ -37,12 +37,12 @@ Although I am still early in my research journey, I am eager to explore opportun
 ## Publications
 
 <div class="row">
-    <div class="column" style="display: inline-block; vertical-align: top; width: 25%;">
+    <div class="column" style="display: inline-block; vertical-align: top; width: 25%; margin-top: 20px;">
         <a href="/assets/images/publications/pmf.png"><img src="/assets/images/publications/pmf.png"></a>
     </div>
     <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
         <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>One-step Latent-free Image Generation with Pixel Mean Flows</b></p>
-        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 10px;">
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 5px;">
                 <u><b>Yiyang Lu*</b></u>, 
                 <span style="color: gray;">Susie Lu*</span>,
                 <span style="color: gray;">Qiao Sun*</span>,
@@ -62,13 +62,15 @@ Although I am still early in my research journey, I am eager to explore opportun
     </div>
 </div>
 
+<div style="height: 20px;"></div>
+
 <div class="row">
     <div class="column" style="display: inline-block; vertical-align: top; width: 25%;">
         <a href="/assets/images/publications/biflow.png"><img src="/assets/images/publications/biflow.png"></a>
     </div>
     <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
         <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>Bidirectional Normalizing Flow: From Data to Noise and Back</b></p>
-        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 10px;"> 
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 5px;"> 
                 <u><b>Yiyang Lu*†</b></u>, 
                 <span style="color: gray;">Qiao Sun*†</span>,
                 <span style="color: gray;">Xianbang Wang*</span>,
@@ -76,9 +78,11 @@ Although I am still early in my research journey, I am eager to explore opportun
                 <span style="color: gray;">Hanhong Zhao</span>,
                 <span style="color: gray;">Kaiming He</span>
         </p>
-        <p style="display: inline-block; vertical-align: top; font-size: 12px; margin-top: 1px; color: gray;">* Equal technical contribution, † Project lead</p>
-        <div style="height: 1px;"></div>
-        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-top: 5px;">
+        <p style="display: inline-block; vertical-align: top; font-size: 12px; margin-top: 0px; color: gray; margin-bottom: 1px;">* Equal technical contribution, † Project lead</p>
+        <div style="height: 0px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 1px;">Computer Vision and Pattern Recognition (CVPR) 2026</p>
+        <div style="height: 0px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-top: 0;">
              <a href="https://arxiv.org/pdf/2512.10953" style="text-decoration: none; color: blue;">[Paper]</a>
              <a href="https://arxiv.org/abs/2512.10953" style="text-decoration: none; color: blue;">[arXiv]</a>
         </p>
@@ -93,7 +97,7 @@ Although I am still early in my research journey, I am eager to explore opportun
     </div>
     <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
         <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>Improved Mean Flows: On the Challenges of Fastforward Generative Models</b></p>
-        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 10px;">
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 5px;">
                 <span style="color: gray;">Zhengyang Geng*</span>, 
                 <u><b>Yiyang Lu*</b></u>, 
                 <span style="color: gray;">Zongze Wu</span>,
@@ -101,8 +105,9 @@ Although I am still early in my research journey, I am eager to explore opportun
                 <span style="color: gray;">J. Zico Kolter</span>,
                 <span style="color: gray;">Kaiming He</span>
         </p>
-        <br>
-        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-top: 10px;">
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 1px;">Computer Vision and Pattern Recognition (CVPR) 2026</p>
+        <div style="height: 0px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-top: 0;">
              <a href="https://arxiv.org/pdf/2512.02012" style="text-decoration: none; color: blue;">[Paper]</a>
              <a href="https://arxiv.org/abs/2512.02012" style="text-decoration: none; color: blue;">[arXiv]</a>
              <a href="https://github.com/Lyy-iiis/imeanflow" style="text-decoration: none; color: blue;">[Code]</a>
@@ -110,7 +115,7 @@ Although I am still early in my research journey, I am eager to explore opportun
     </div>
 </div>
 
-<div style="height: 20px;"></div>
+<div style="height: 40px;"></div>
 
 <div class="row">
     <div class="column" style="display: inline-block; vertical-align: top; width: 25%;">
@@ -127,7 +132,7 @@ Although I am still early in my research journey, I am eager to explore opportun
                 <span style="color: gray;">Zhengrong Xue</span>,
                 <span style="color: gray;">Huazhe Xu</span>
         </p>
-        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0;">International Conference on Learning Representations (ICLR) 2026</p>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 1px;">International Conference on Learning Representations (ICLR) 2026</p>
         <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-top: 0;">
              <a href="https://lyy-iiis.github.io/h3dp/" style="text-decoration: none; color: blue;">[Project Page]</a>
              <a href="https://arxiv.org/pdf/2505.07819" style="text-decoration: none; color: blue;">[Paper]</a>
