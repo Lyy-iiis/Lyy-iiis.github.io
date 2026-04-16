@@ -13,7 +13,7 @@ Before entering college, I competed in the Physics Olympiad during high school a
 
 Although I am still early in my research journey, I am eager to explore opportunities in both academia and industry. I also enjoy connecting with people who share similar interests and discussing everything from research ideas to personal experiences. Feel free to reach out if you’d like to connect!
 
-<!-- My resume is linked [here](/assets/pdf/cv.pdf). -->
+My resume is linked [here](/assets/pdf/cv.pdf).
 
 ## Education
 
@@ -80,7 +80,7 @@ Although I am still early in my research journey, I am eager to explore opportun
         </p>
         <p style="display: inline-block; vertical-align: top; font-size: 12px; margin-top: 0px; color: gray; margin-bottom: 1px;">* Equal technical contribution, † Project lead</p>
         <div style="height: 0px;"></div>
-        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 1px;">Computer Vision and Pattern Recognition (CVPR) 2026</p>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 1px;">Computer Vision and Pattern Recognition (CVPR) 2026 (Highlight)</p>
         <div style="height: 0px;"></div>
         <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-top: 0;">
              <a href="https://arxiv.org/pdf/2512.10953" style="text-decoration: none; color: blue;">[Paper]</a>
@@ -106,7 +106,7 @@ Although I am still early in my research journey, I am eager to explore opportun
                 <span style="color: gray;">J. Zico Kolter</span>,
                 <span style="color: gray;">Kaiming He</span>
         </p>
-        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 1px;">Computer Vision and Pattern Recognition (CVPR) 2026</p>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 1px;">Computer Vision and Pattern Recognition (CVPR) 2026 (Highlight)</p>
         <div style="height: 0px;"></div>
         <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-top: 0;">
              <a href="https://arxiv.org/pdf/2512.02012" style="text-decoration: none; color: blue;">[Paper]</a>
