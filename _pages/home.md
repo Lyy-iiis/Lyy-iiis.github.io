@@ -53,8 +53,10 @@ My resume is linked [here](/assets/pdf/cv.pdf).
                 <span style="color: gray;">Zhengyang Geng</span>,
                 <span style="color: gray;">Kaiming He</span>
         </p>
-        <br>
-        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-top: 10px;">
+        <div style="height: 0px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 1px;">International Conference on Machine Learning (ICML) 2026</p>
+        <div style="height: 0px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-top: 1px;">
              <a href="https://arxiv.org/pdf/2601.22158" style="text-decoration: none; color: blue;">[Paper]</a>
              <a href="https://arxiv.org/abs/2601.22158" style="text-decoration: none; color: blue;">[arXiv]</a>
              <a href="https://github.com/Lyy-iiis/pMF" style="text-decoration: none; color: blue;">[Code]</a>
