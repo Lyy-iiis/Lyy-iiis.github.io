@@ -38,6 +38,35 @@ My resume is linked [here](/assets/pdf/cv.pdf).
 
 <div class="row">
     <div class="column" style="display: inline-block; vertical-align: top; width: 25%; margin-top: 20px;">
+        <a href="/assets/images/publications/elf.gif"><img src="/assets/images/publications/elf.gif"></a>
+    </div>
+    <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
+        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>ELF: Embedded Language Flows</b></p>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 5px;">
+                <span style="color: gray;">Keya Hu*</span>,
+                <span style="color: gray;">Linlu Qiu*</span>,
+                <u><b>Yiyang Lu</b></u>,
+                <span style="color: gray;">Hanhong Zhao</span>,
+                <span style="color: gray;">Tianhong Li</span>,
+                <span style="color: gray;">Yoon Kim</span>,
+                <span style="color: gray;">Jacob Andreas</span>,
+                <span style="color: gray;">Kaiming He</span>
+        </p>
+        <div style="height: 0px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 1px;">arXiv preprint, 2026</p>
+        <div style="height: 0px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-top: 1px;">
+             <a href="https://arxiv.org/pdf/2605.10938" style="text-decoration: none; color: blue;">[Paper]</a>
+             <a href="https://arxiv.org/abs/2605.10938" style="text-decoration: none; color: blue;">[arXiv]</a>
+             <a href="https://github.com/lillian039/ELF" style="text-decoration: none; color: blue;">[Code]</a>
+        </p>
+    </div>
+</div>
+
+<div style="height: 20px;"></div>
+
+<div class="row">
+    <div class="column" style="display: inline-block; vertical-align: top; width: 25%;">
         <a href="/assets/images/publications/pmf.png"><img src="/assets/images/publications/pmf.png"></a>
     </div>
     <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
