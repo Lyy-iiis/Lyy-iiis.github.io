@@ -206,23 +206,6 @@ My resume is linked [here](/assets/pdf/cv.pdf).
 <div class="row">
     <div class="column" style="display: inline-block; vertical-align: middle; width: 25%;">
         <div style="text-align: center;">
-            <img src="/assets/images/spark.png" alt="Tsinghua Spark Program logo" style="width: 40%;">
-        </div>
-    </div>
-    <div class="column" style="display: inline-block; vertical-align: middle; width: 70%; margin-left: 3%">
-        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>Sparking Program</b></p>
-        <div style="height: 2px;"></div>
-        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 10px;">Top 1% in Tsinghua</p>
-        <div style="height: 0px;"></div>
-        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0;">Tsinghua University, 2026</p>
-    </div>
-</div>
-
-<div style="height: 20px;"></div>
-
-<div class="row">
-    <div class="column" style="display: inline-block; vertical-align: middle; width: 25%;">
-        <div style="text-align: center;">
             <img src="/assets/images/sensetime.png" alt="SenseTime logo" style="width: 70%;">
         </div>
     </div>
@@ -232,6 +215,23 @@ My resume is linked [here](/assets/pdf/cv.pdf).
         <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 10px;">Top 30 Undergraduates Nationwide</p>
         <div style="height: 0px;"></div>
         <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0;">SenseTime, 2026</p>
+    </div>
+</div>
+
+<div style="height: 20px;"></div>
+
+<div class="row">
+    <div class="column" style="display: inline-block; vertical-align: middle; width: 25%;">
+        <div style="text-align: center;">
+            <img src="/assets/images/spark.png" alt="Tsinghua Spark Program logo" style="width: 40%;">
+        </div>
+    </div>
+    <div class="column" style="display: inline-block; vertical-align: middle; width: 70%; margin-left: 3%">
+        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>Sparking Program</b></p>
+        <div style="height: 2px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 10px;">Top 1% in Tsinghua</p>
+        <div style="height: 0px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0;">Tsinghua University, 2026</p>
     </div>
 </div>
 
