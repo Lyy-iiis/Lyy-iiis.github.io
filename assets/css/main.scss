@@ -84,7 +84,8 @@ search: false
     }
     /* 教育 / 奖项的 logo 不必像论文配图那么大,缩成精致的小图标更协调 */
     .row .column img[src$="iiis.png"],
-    .row .column img[src$="thu.png"] {
+    .row .column img[src$="thu.png"],
+    .row .column img[src$="spark.png"] {
         max-width: 96px;
     }
     .row .column img[src$="cpho.png"],
@@ -96,7 +97,8 @@ search: false
     .row:has(img[src$="iiis.png"]) .column,
     .row:has(img[src$="thu.png"]) .column,
     .row:has(img[src$="cpho.png"]) .column,
-    .row:has(img[src$="sensetime.png"]) .column {
+    .row:has(img[src$="sensetime.png"]) .column,
+    .row:has(img[src$="spark.png"]) .column {
         text-align: center;
     }
 }
