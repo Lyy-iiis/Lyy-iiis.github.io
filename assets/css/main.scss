@@ -74,3 +74,56 @@ search: false
         margin: 0 auto 8px;
     }
 }
+
+/* 手机 / 平板(< $large)上把作者资料卡做成桌面那种竖排大头像样式,
+   避免默认的 36px 小头像 + “Follow” 折叠条 */
+@media (max-width: $large - 1px) {
+    .sidebar .author__avatar {
+        display: block;
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+    .sidebar .author__avatar img {
+        width: 180px;
+        height: auto;
+        max-width: 180px;
+        margin: 0 auto;
+        padding: 5px;
+        border: 1px solid $border-color;
+    }
+    .sidebar .author__content {
+        display: block;
+        width: 100%;
+        padding-inline: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .sidebar .author__name {
+        font-size: $type-size-4;
+    }
+    .sidebar .author__bio {
+        margin-top: 5px;
+    }
+    .sidebar .author__urls-wrapper {
+        display: block;
+        text-align: center;
+    }
+    /* 直接平铺展示社交链接,隐藏“Follow”折叠按钮与气泡箭头 */
+    .sidebar .author__urls-wrapper button {
+        display: none;
+    }
+    .sidebar .author__urls {
+        display: block;
+        position: relative;
+        margin: 10px 0 0;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+    .sidebar .author__urls::before,
+    .sidebar .author__urls::after {
+        display: none;
+    }
+}
