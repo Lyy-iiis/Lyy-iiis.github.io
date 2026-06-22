@@ -113,6 +113,44 @@ search: false
     }
 }
 
+/* ===== Entry rows: shared classes for Education / Publications / Awards =====
+   Replaces the long inline styles that were duplicated across every entry.
+   (.column is kept on the wrappers so the responsive rules above still apply.)
+   Scoped under .page__content so these beat the theme's .page__content p / a
+   element rules — exactly what the original inline styles did. */
+.page__content .col-fig    { display: inline-block; vertical-align: top; width: 25%; }
+.page__content .col-logo   { display: inline-block; vertical-align: middle; width: 25%; text-align: center; }
+.page__content .entry-body { display: inline-block; vertical-align: top; width: 70%; margin-left: 3%; }
+.page__content .entry-body.mid { vertical-align: middle; }
+
+.page__content .entry-title,
+.page__content .entry-authors,
+.page__content .entry-sub,
+.page__content .entry-note,
+.page__content .entry-meta,
+.page__content .entry-end,
+.page__content .entry-links {
+    display: inline-block;
+    vertical-align: top;
+}
+.page__content .entry-authors,
+.page__content .entry-sub,
+.page__content .entry-note,
+.page__content .entry-meta,
+.page__content .entry-end,
+.page__content .entry-links {
+    margin-top: 0;
+}
+.page__content .entry-title   { font-size: 16px; margin-bottom: 0; }
+.page__content .entry-authors { font-size: 14px; margin-bottom: 5px; }
+.page__content .entry-sub     { font-size: 14px; margin-bottom: 10px; }
+.page__content .entry-note    { font-size: 12px; margin-bottom: 1px; color: gray; }
+.page__content .entry-meta    { font-size: 14px; margin-bottom: 1px; }
+.page__content .entry-end     { font-size: 14px; }
+.page__content .entry-links   { font-size: 16px; }
+.page__content .entry-links a { text-decoration: none; color: blue; }
+.page__content .muted         { color: gray; }
+
 /* 手机 / 平板(< $large)上把作者资料卡做成桌面那种竖排大头像样式,
    避免默认的 36px 小头像 + “Follow” 折叠条 */
 @media (max-width: $large - 1px) {
