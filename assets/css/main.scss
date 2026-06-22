@@ -101,6 +101,16 @@ search: false
     }
 }
 
+/* 桌面端:论文行左侧配图与右侧文字在高度上居中对齐。
+   原本两列都是 vertical-align: top,图比文字矮/高时就会顶部对齐而不居中;
+   同时清掉个别图片列上残留的 margin-top(否则会把图往下顶、破坏居中)。 */
+@media (min-width: 601px) {
+    .row:has(img[src*="/publications/"]) .column {
+        vertical-align: middle !important;
+        margin-top: 0 !important;
+    }
+}
+
 /* 手机 / 平板(< $large)上把作者资料卡做成桌面那种竖排大头像样式,
    避免默认的 36px 小头像 + “Follow” 折叠条 */
 @media (max-width: $large - 1px) {
