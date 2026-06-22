@@ -75,6 +75,21 @@ search: false
         max-width: 240px;
         margin: 0 auto 8px;
     }
+    /* 教育 / 奖项的 logo 不必像论文配图那么大,缩成精致的小图标更协调 */
+    .row .column img[src$="iiis.png"],
+    .row .column img[src$="thu.png"] {
+        max-width: 96px;
+    }
+    .row .column img[src$="cpho.png"] {
+        max-width: 150px;
+    }
+    /* 教育 / 奖项条目文字也居中,配合居中的 logo 更协调;
+       用 :has() 只命中含这些 logo 的行,不影响论文列表 */
+    .row:has(img[src$="iiis.png"]) .column,
+    .row:has(img[src$="thu.png"]) .column,
+    .row:has(img[src$="cpho.png"]) .column {
+        text-align: center;
+    }
 }
 
 /* 手机 / 平板(< $large)上把作者资料卡做成桌面那种竖排大头像样式,
