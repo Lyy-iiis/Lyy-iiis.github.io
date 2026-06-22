@@ -75,19 +75,28 @@ search: false
         max-width: 240px;
         margin: 0 auto 8px;
     }
+    /* ELF / pMF 是较宽、信息密集的配图,手机上放大一些更清楚
+       (max-width:100% 兜底,窄屏不会横向溢出) */
+    .row .column img[src$="elf.gif"],
+    .row .column img[src$="pmf.png"] {
+        width: 300px;
+        max-width: 100%;
+    }
     /* 教育 / 奖项的 logo 不必像论文配图那么大,缩成精致的小图标更协调 */
     .row .column img[src$="iiis.png"],
     .row .column img[src$="thu.png"] {
         max-width: 96px;
     }
-    .row .column img[src$="cpho.png"] {
+    .row .column img[src$="cpho.png"],
+    .row .column img[src$="sensetime.png"] {
         max-width: 150px;
     }
     /* 教育 / 奖项条目文字也居中,配合居中的 logo 更协调;
        用 :has() 只命中含这些 logo 的行,不影响论文列表 */
     .row:has(img[src$="iiis.png"]) .column,
     .row:has(img[src$="thu.png"]) .column,
-    .row:has(img[src$="cpho.png"]) .column {
+    .row:has(img[src$="cpho.png"]) .column,
+    .row:has(img[src$="sensetime.png"]) .column {
         text-align: center;
     }
 }

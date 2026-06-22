@@ -38,6 +38,34 @@ My resume is linked [here](/assets/pdf/cv.pdf).
 
 <div class="row">
     <div class="column" style="display: inline-block; vertical-align: top; width: 25%; margin-top: 20px;">
+        <a href="/assets/images/publications/minit2i.png"><img src="/assets/images/publications/minit2i.png" alt="A Minimalist Baseline for Text-to-Image Generation teaser"></a>
+    </div>
+    <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
+        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>A Minimalist Baseline for Text-to-Image Generation</b></p>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 5px;">
+                <span style="color: gray;">Xianbang Wang†</span>,
+                <span style="color: gray;">Hanhong Zhao‡</span>,
+                <u><b>Yiyang Lu‡</b></u>,
+                <span style="color: gray;">Kangyang Zhou</span>,
+                <span style="color: gray;">Linrui Ma</span>,
+                <span style="color: gray;">Kaiming He§</span>
+        </p>
+        <p style="display: inline-block; vertical-align: top; font-size: 12px; margin-top: 0px; color: gray; margin-bottom: 1px;">† Project lead, ‡ Core contributor, § Supervisor</p>
+        <div style="height: 0px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 1px;">Blog post, 2026</p>
+        <div style="height: 0px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-top: 1px;">
+             <a href="https://peppaking8.github.io/#/post/minit2i" style="text-decoration: none; color: blue;">[Project Page]</a>
+             <a href="https://github.com/Hope7Happiness/minit2i-torch" style="text-decoration: none; color: blue;">[PyTorch]</a>
+             <a href="https://github.com/PeppaKing8/minit2i-jax" style="text-decoration: none; color: blue;">[JAX]</a>
+        </p>
+    </div>
+</div>
+
+<div style="height: 20px;"></div>
+
+<div class="row">
+    <div class="column" style="display: inline-block; vertical-align: top; width: 25%; margin-top: 20px;">
         <a href="/assets/images/publications/elf.gif"><img src="/assets/images/publications/elf.gif" alt="ELF: Embedded Language Flows teaser"></a>
     </div>
     <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
@@ -174,6 +202,23 @@ My resume is linked [here](/assets/pdf/cv.pdf).
 </div>
 
 ## Selected Awards
+
+<div class="row">
+    <div class="column" style="display: inline-block; vertical-align: middle; width: 25%;">
+        <div style="text-align: center;">
+            <img src="/assets/images/sensetime.png" alt="SenseTime logo" style="width: 70%;">
+        </div>
+    </div>
+    <div class="column" style="display: inline-block; vertical-align: middle; width: 70%; margin-left: 3%">
+        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>SenseTime Scholarship</b></p>
+        <div style="height: 2px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 10px;">Top 30 Undergraduates Nationwide</p>
+        <div style="height: 0px;"></div>
+        <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0;">SenseTime, 2026</p>
+    </div>
+</div>
+
+<div style="height: 20px;"></div>
 
 <div class="row">
     <div class="column" style="display: inline-block; vertical-align: middle; width: 25%;">
