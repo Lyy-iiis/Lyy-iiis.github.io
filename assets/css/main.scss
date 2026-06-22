@@ -68,8 +68,10 @@ search: false
         width: 100% !important;
         margin-left: 0 !important;
     }
-    /* 防止 logo / 配图在堆叠后撑得过大 */
+    /* 堆叠后图片居中,并防止 logo / 配图撑得过大
+       (display:block 必须有,否则 inline 图片会忽略 margin auto 而靠左) */
     .row .column img {
+        display: block;
         max-width: 240px;
         margin: 0 auto 8px;
     }
