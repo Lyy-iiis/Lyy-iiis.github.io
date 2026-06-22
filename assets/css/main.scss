@@ -60,3 +60,17 @@ search: false
 .site-title {
     font-size: 1.5em;
 }
+
+/* 窄屏下让自定义双栏(Education / Publications / Awards)竖向堆叠 */
+@media (max-width: 600px) {
+    .row .column {
+        display: block !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+    /* 防止 logo / 配图在堆叠后撑得过大 */
+    .row .column img {
+        max-width: 240px;
+        margin: 0 auto 8px;
+    }
+}

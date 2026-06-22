@@ -7,7 +7,7 @@ permalink: /
 
 ## About Me
 
-I am a sophomore majoring in Computer Science at the [IIIS, Tsinghua University](https://iiis.tsinghua.edu.cn/). Currently, I am  an intern at [MIT CSAIL](https://www.csail.mit.edu/), supervised by Professor [Kaiming He](https://people.csail.mit.edu/kaiming/). My research interests lie in computer vision and deep generative models. I am particularly fascinated by simple yet effective model designs.
+I am a sophomore majoring in Computer Science at the [IIIS, Tsinghua University](https://iiis.tsinghua.edu.cn/). Currently, I am an intern at [MIT CSAIL](https://www.csail.mit.edu/), supervised by Professor [Kaiming He](https://people.csail.mit.edu/kaiming/). My research interests lie in computer vision and deep generative models. I am particularly fascinated by simple yet effective model designs.
 
 Before entering college, I competed in the Physics Olympiad during high school and won a gold medal in the 39th CPhO. Afterward, I spent one preparatory year at IIIS, Tsinghua University, where I built a solid foundation in the mathematical principles underlying computer science and deep learning. I am fortunate to conduct research under the supervision of Professor [Huazhe Xu](https://hxu.rocks/) during this period.
 
@@ -20,7 +20,7 @@ My resume is linked [here](/assets/pdf/cv.pdf).
 <div class="row">
     <div class="column" style="display: inline-block; vertical-align: middle; width: 25%;">
         <div style="text-align: center;">
-            <img src="/assets/images/iiis.png" alt="Tsinghua University" style="width: 60%;">
+            <img src="/assets/images/iiis.png" alt="IIIS, Tsinghua University logo" style="width: 60%;">
         </div>
     </div>
     <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
@@ -38,7 +38,7 @@ My resume is linked [here](/assets/pdf/cv.pdf).
 
 <div class="row">
     <div class="column" style="display: inline-block; vertical-align: top; width: 25%; margin-top: 20px;">
-        <a href="/assets/images/publications/elf.gif"><img src="/assets/images/publications/elf.gif"></a>
+        <a href="/assets/images/publications/elf.gif"><img src="/assets/images/publications/elf.gif" alt="ELF: Embedded Language Flows teaser"></a>
     </div>
     <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
         <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>ELF: Embedded Language Flows</b></p>
@@ -67,7 +67,7 @@ My resume is linked [here](/assets/pdf/cv.pdf).
 
 <div class="row">
     <div class="column" style="display: inline-block; vertical-align: top; width: 25%;">
-        <a href="/assets/images/publications/pmf.png"><img src="/assets/images/publications/pmf.png"></a>
+        <a href="/assets/images/publications/pmf.png"><img src="/assets/images/publications/pmf.png" alt="Pixel Mean Flows teaser"></a>
     </div>
     <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
         <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>One-step Latent-free Image Generation with Pixel Mean Flows</b></p>
@@ -97,7 +97,7 @@ My resume is linked [here](/assets/pdf/cv.pdf).
 
 <div class="row">
     <div class="column" style="display: inline-block; vertical-align: top; width: 25%;">
-        <a href="/assets/images/publications/biflow.png"><img src="/assets/images/publications/biflow.png"></a>
+        <a href="/assets/images/publications/biflow.png"><img src="/assets/images/publications/biflow.png" alt="Bidirectional Normalizing Flow teaser"></a>
     </div>
     <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
         <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>Bidirectional Normalizing Flow: From Data to Noise and Back</b></p>
@@ -125,7 +125,7 @@ My resume is linked [here](/assets/pdf/cv.pdf).
 
 <div class="row">
     <div class="column" style="display: inline-block; vertical-align: top; width: 25%;">
-        <a href="/assets/images/publications/imf.png"><img src="/assets/images/publications/imf.png"></a>
+        <a href="/assets/images/publications/imf.png"><img src="/assets/images/publications/imf.png" alt="Improved Mean Flows teaser"></a>
     </div>
     <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
         <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>Improved Mean Flows: On the Challenges of Fastforward Generative Models</b></p>
@@ -151,7 +151,7 @@ My resume is linked [here](/assets/pdf/cv.pdf).
 
 <div class="row">
     <div class="column" style="display: inline-block; vertical-align: top; width: 25%;">
-        <a href="/assets/images/publications/h3dp.jpg"><img src="/assets/images/publications/h3dp.jpg"></a>
+        <a href="/assets/images/publications/h3dp.jpg"><img src="/assets/images/publications/h3dp.jpg" alt="H³DP teaser"></a>
     </div>
     <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
         <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>H³DP: Triply-Hierarchical Diffusion Policy for Visuomotor Learning</b></p>
@@ -212,11 +212,11 @@ My resume is linked [here](/assets/pdf/cv.pdf).
 <div class="row">
     <div class="column" style="display: inline-block; vertical-align: middle; width: 25%;">
         <div style="text-align: center;">
-            <img src="/assets/images/cpho.png" alt="Tsinghua University" style="width: 100%;">
+            <img src="/assets/images/cpho.png" alt="39th Chinese Physics Olympiad (CPhO) logo" style="width: 100%;">
         </div>
     </div>
     <div class="column" style="display: inline-block; vertical-align: top; width: 70%; margin-left: 3%">
-        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>The 39 th Chinese Physics Olympiad (CPhO)</b></p>
+        <p style="display: inline-block; vertical-align: top; font-size: 16px; margin-bottom: 0;"><b>The 39th Chinese Physics Olympiad (CPhO)</b></p>
         <div style="height: 2px;"></div>
         <p style="display: inline-block; vertical-align: top; font-size: 14px; margin-top: 0; margin-bottom: 10px;">Gold Medal (Top 10)</p>
         <div style="height: 0px;"></div>
