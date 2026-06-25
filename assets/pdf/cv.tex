@@ -1,0 +1,228 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[a4paper,margin=0.9in]{geometry}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage[hyphens]{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontspec}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+\setlength{\emergencystretch}{3em}
+\setlist[itemize]{leftmargin=1.3em, itemsep=0.15em, topsep=0.25em, parsep=0pt, partopsep=0pt}
+\urlstyle{same}
+
+\newfontfamily\namefont{Baskerville}[Ligatures=TeX]
+\newfontfamily\headerfont{Optima}[Ligatures=TeX]
+\newfontfamily\sectionfont{Baskerville}[Ligatures=TeX]
+
+\titleformat{\section}{\sectionfont\Large\bfseries}{}{0em}{}[\vspace{0.35em}\titlerule]
+\titlespacing*{\section}{0pt}{1.0em}{0.6em}
+
+\newcommand{\Header}[7]{%
+    {\namefont\bfseries\fontsize{25}{27}\selectfont #1}\par
+    \vspace{0.28em}
+    {\headerfont\small #2}\par
+    {\headerfont\small \href{mailto:#3}{#3} \quad \textbar \quad #4}\par
+    {\headerfont\small \href{#5}{GitHub} \quad \textbar \quad \href{#6}{Scholar} \quad \textbar \quad \href{#7}{Homepage}}\par
+    \vspace{0.45em}
+}
+
+\newcommand{\EntryHeader}[2]{%
+    \begin{tabularx}{\textwidth}{@{}Xr@{}}
+        #1 & #2 \\
+    \end{tabularx}\par
+}
+
+\newcommand{\EducationEntry}[4]{%
+    \EntryHeader{\textbf{#1}}{#3}
+    \textit{#2}\par
+    \if\relax\detokenize{#4}\relax\else
+        #4\par
+    \fi
+    \vspace{0.2em}
+}
+
+\newcommand{\ResearchEntry}[4]{%
+    \EntryHeader{\textbf{#1}}{#3}
+    \textit{#2}\par
+    #4
+    \vspace{0.25em}
+}
+
+\newcommand{\PublicationEntry}[6]{%
+    \textbf{#1}\par
+    #2\par
+    \textit{#3}.%
+    \if\relax\detokenize{#4}\relax\else
+        \ \href{#4}{[Project]}%
+    \fi
+    \ \href{#5}{[arXiv]}%
+    \if\relax\detokenize{#6}\relax\else
+        \ \href{#6}{[Code]}%
+    \fi
+    \par
+    \vspace{0.3em}
+}
+
+\newcommand{\AwardEntry}[2]{%
+    \EntryHeader{#1}{#2}
+}
+
+\begin{document}
+
+\Header
+    {Yiyang Lu}
+    {IIIS, Tsinghua University, Beijing, China}
+    {luyy24@mails.tsinghua.edu.cn}
+    {(+86) 180-5166-0139}
+    {https://github.com/Lyy-iiis}
+    {https://scholar.google.com/citations?view_op=list_works&hl=en&user=slA2hCMAAAAJ}
+    {https://lyy-iiis.github.io/}
+
+\section{Education}
+\EducationEntry
+    {IIIS, Tsinghua University}
+    {Undergraduate Student, GPA: 4.0/4.0, Rank 1}
+    {Sep 2024 -- Expected Jun 2028}
+    {}
+
+\EducationEntry
+    {IIIS, Tsinghua University}
+    {Pre-College Program}
+    {Sep 2023 -- Jun 2024}
+    {}
+
+\section{Research Experience}
+\ResearchEntry
+    {Undergraduate Researcher}
+    {Computer Vision, advised by Prof. Kaiming He, Massachusetts Institute of Technology}
+    {Feb 2025 -- Present}
+    {
+        \begin{itemize}
+            \item Develop fast generative modeling methods spanning diffusion models, flow matching, and normalizing flows; build JAX training pipelines on TPUs and Google Cloud Platform.
+            \item Co-authored 5 papers and projects --- first or co-first author on 3 (ICML 2026 and two CVPR 2026 Highlights), with contributing roles on two others (an arXiv preprint and a blog post).
+        \end{itemize}
+    }
+
+\ResearchEntry
+    {Undergraduate Researcher}
+    {Robotics, advised by Prof. Huazhe Xu, Tsinghua University}
+    {Sep 2024 -- Jun 2025}
+    {
+        \begin{itemize}
+            \item Developed diffusion-based visuomotor learning methods and vision encoders for imitation learning.
+            \item Ran experiments on real robots and simulators; co-first author on H$^\mathbf{3}$DP, accepted to ICLR 2026.
+        \end{itemize}
+    }
+
+\section{Publications}
+
+\textbf{Preprints}\par
+
+% MiniT2I: a blog post with no arXiv link and two code repos, so written out
+% directly instead of via \PublicationEntry (which assumes a single arXiv link).
+\textbf{A Minimalist Baseline for Text-to-Image Generation}\par
+Xianbang Wang$^\dagger$, Hanhong Zhao$^\ddagger$, \underline{Yiyang Lu$^\ddagger$}, Kangyang Zhou, Linrui Ma, Kaiming He$^\S$\par
+\textit{Blog post}.\ \href{https://peppaking8.github.io/\#/post/minit2i}{[Project]}\ \href{https://github.com/Hope7Happiness/minit2i-torch}{[PyTorch]}\ \href{https://github.com/PeppaKing8/minit2i-jax}{[JAX]}\par
+\vspace{0.3em}
+
+\PublicationEntry
+    {ELF: Embedded Language Flows}
+    {Keya Hu*, Linlu Qiu*, \underline{Yiyang Lu}, Hanhong Zhao, Tianhong Li, Yoon Kim, Jacob Andreas, Kaiming He}
+    {arXiv preprint}
+    {}
+    {https://arxiv.org/abs/2605.10938}
+    {https://github.com/lillian039/ELF}
+
+\textbf{Accepted}\par
+
+\PublicationEntry
+    {One-step Latent-free Image Generation with Pixel Mean Flows}
+    {\underline{Yiyang Lu*}, Susie Lu*, Qiao Sun*, Hanhong Zhao*, Zhicheng Jiang, Xianbang Wang, Tianhong Li, Zhengyang Geng, Kaiming He}
+    {Accepted to ICML 2026}
+    {}
+    {https://arxiv.org/abs/2601.22158}
+    {https://github.com/Lyy-iiis/pMF}
+
+\PublicationEntry
+    {Bidirectional Normalizing Flow: From Data to Noise and Back}
+    {\underline{Yiyang Lu*$^\dagger$}, Qiao Sun*$^\dagger$, Xianbang Wang*, Zhicheng Jiang, Hanhong Zhao, Kaiming He}
+    {Accepted to CVPR 2026 (Highlight)}
+    {}
+    {https://arxiv.org/abs/2512.10953}
+    {https://github.com/Lyy-iiis/BiFlow}
+
+\PublicationEntry
+    {Improved Mean Flows: On the Challenges of Fastforward Generative Models}
+    {Zhengyang Geng*, \underline{Yiyang Lu*}, Zongze Wu, Eli Shechtman, J. Zico Kolter, Kaiming He}
+    {Accepted to CVPR 2026 (Highlight)}
+    {}
+    {https://arxiv.org/abs/2512.02012}
+    {https://github.com/Lyy-iiis/imeanflow}
+
+\PublicationEntry
+    {H$^\mathbf{3}$DP: Triply-Hierarchical Diffusion Policy for Visuomotor Learning}
+    {\underline{Yiyang Lu*}, Yufeng Tian*, Zhecheng Yuan*, Xianbang Wang, Pu Hua, Zhengrong Xue, Huazhe Xu}
+    {Accepted to ICLR 2026}
+    {https://lyy-iiis.github.io/h3dp/}
+    {https://arxiv.org/abs/2505.07819}
+    {}
+
+\textit{* denotes equal contribution, $^\dagger$ denotes project lead, $^\ddagger$ denotes core contributor, $^\S$ denotes supervisor.}
+
+\section{Awards}
+\AwardEntry{SenseTime Scholarship (Top 30 undergraduates nationwide)}{2026}
+\AwardEntry{Sparking Program (Top 1\% in Tsinghua)}{2026}
+\AwardEntry{National Scholarship, China}{2025}
+\AwardEntry{Tsinghua Academy Talent Development Program Scholarship}{2024}
+\AwardEntry{Freshman Scholarship, Tsinghua University}{2024}
+\AwardEntry{Gold Medal (Top 10 nationwide), Chinese Physics Olympiad}{2022}
+
+\section{Skills}
+\textbf{Programming:} Python, C/C++, Bash, Scala\par
+\textbf{ML / Systems:} PyTorch, JAX, Docker, Google Cloud Platform, TPU training\par
+\textbf{Tools:} Git, LaTeX, MATLAB, SQL, GDB\par
+\textbf{Languages:} English (Fluent), Chinese (Native)
+
+\section{Transcript}
+Professional courses completed at IIIS, Tsinghua University.
+
+\vspace{1em}
+
+{\small\centering
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{0.85\textwidth}{@{}l>{\raggedright\arraybackslash}Xcc@{}}
+\textbf{Term} & \textbf{Course} & \textbf{Credits} & \textbf{Grade} \\
+\hline
+2023 Autumn & Introduction to Computer Science & 3 & A+ \\
+2023 Autumn & Introduction to Programming in C/C++ & 2 & A+ \\
+2023 Autumn & Calculus A (1) & 5 & A \\
+2023 Autumn & Linear Algebra & 4 & A+ \\
+2023 Autumn & General Physics (2) & 4 & A+ \\
+2024 Spring & Introduction to Computer Systems & 4 & A+ \\
+2024 Spring & Introduction to Large Language Model Application & 2 & A \\
+2024 Spring & Mathematics for Computer Science and Artificial Intelligence & 4 & A+ \\
+2024 Spring & Calculus A (2) & 5 & A+ \\
+2024 Spring & General Physics (1) & 4 & A \\
+2024 Spring & Quantum Computer Science & 4 & A+ \\
+2024 Autumn & Advanced Computer Graphics & 3 & A+ \\
+2024 Autumn & Natural Language Processing & 3 & A+ \\
+2024 Autumn & Machine Learning & 4 & A+ \\
+2024 Autumn & Algorithm Design & 4 & A+ \\
+2024 Autumn & Artificial Intelligence: Principles and Techniques & 3 & A+ \\
+2025 Spring & Computer Vision & 3 & A \\
+2025 Spring & Deep Learning & 3 & A \\
+2025 Spring & Multi-modal Machine Learning & 3 & A \\
+2025 Summer & Type-safe Modern System Practice & 2 & A \\
+2025 Autumn & Intelligent Systems and Robotics & 3 & A \\
+\end{tabularx}
+\par
+}
+
+\end{document}
