@@ -79,7 +79,7 @@ My resume is linked [here](/assets/pdf/cv.pdf).
                 <span class="muted">Kaiming He</span>
         </p>
         <div style="height: 0px;"></div>
-        <p class="entry-meta">arXiv preprint, 2026</p>
+        <p class="entry-meta">Neural Information Processing Systems (NeurIPS) 2026</p>
         <div style="height: 0px;"></div>
         <p class="entry-links">
              <a href="https://arxiv.org/pdf/2605.10938">[Paper]</a>
