@@ -147,8 +147,67 @@ search: false
 .page__content .entry-note    { font-size: 12px; margin-bottom: 1px; color: gray; }
 .page__content .entry-meta    { font-size: 14px; margin-bottom: 1px; }
 .page__content .entry-end     { font-size: 14px; }
-.page__content .entry-links   { font-size: 16px; }
-.page__content .entry-links a { text-decoration: none; color: blue; }
+.page__content .entry-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 7px;
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 1.3;
+}
+.page__content .entry-links .publication-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 32px;
+    padding: 6px 10px;
+    border: 1px solid #d8dce1;
+    border-radius: 6px;
+    background: #fff;
+    color: #41464d;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+
+    &:visited {
+        color: #41464d;
+    }
+    &:hover {
+        color: #20252b;
+        background: #f5f6f8;
+        border-color: #aeb5bd;
+        text-decoration: none;
+    }
+    &:focus-visible {
+        outline: 2px solid #59636e;
+        outline-offset: 3px;
+    }
+    > i {
+        font-size: 12px;
+    }
+}
+.page__content .publication-stars {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: 2px;
+    padding-left: 8px;
+    border-left: 1px solid #e1e4e8;
+    color: #656d76;
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+
+    &[hidden] {
+        display: none;
+    }
+}
+.page__content .publication-link .publication-icon {
+    flex-shrink: 0;
+    width: 12px;
+    height: 16px;
+}
 .page__content .muted         { color: gray; }
 
 /* 手机 / 平板(< $large)上把作者资料卡做成桌面那种竖排大头像样式,
@@ -201,5 +260,124 @@ search: false
     .sidebar .author__urls::before,
     .sidebar .author__urls::after {
         display: none;
+    }
+}
+
+/* Homepage mobile rhythm: keep related details close, then leave a clear
+   pause between entries and sections. Desktop spacing stays independent. */
+@media (max-width: 600px) {
+    .academic-home {
+        .sidebar > .h-card {
+            margin-bottom: 0;
+        }
+        .sidebar .author__content {
+            margin-top: 12px;
+        }
+        .sidebar .author__bio {
+            margin-top: 6px;
+
+            p {
+                margin: 0;
+            }
+        }
+        .sidebar .author__urls {
+            margin-top: 12px;
+
+            li + li {
+                margin-top: 4px;
+            }
+            a {
+                margin-bottom: 0;
+            }
+        }
+        .page .page__inner-wrap {
+            margin-top: 32px;
+
+            > header,
+            > .page__meta {
+                display: none;
+            }
+        }
+        .page__content {
+            margin-top: 0;
+            line-height: 1.65;
+
+            > p {
+                margin: 0 0 16px;
+            }
+            > h2 {
+                margin: 44px 0 20px;
+                padding-bottom: 12px;
+                font-size: 28px;
+                line-height: 1.25;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+            .entry-spacer {
+                display: none;
+            }
+            .row {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+            .col-fig > a {
+                display: block;
+            }
+            .row .column img {
+                margin: 0 auto;
+            }
+            .entry-body {
+                display: flex !important;
+                flex-direction: column;
+                gap: 4px;
+                line-height: 1.5;
+
+                > p {
+                    display: block;
+                    margin: 0;
+                }
+            }
+            .entry-title {
+                line-height: 1.45;
+            }
+            .publication-entry {
+                gap: 16px;
+
+                ~ .publication-entry {
+                    margin-top: 40px;
+                }
+                .entry-body {
+                    gap: 6px;
+                    line-height: 1.55;
+                }
+                .entry-note {
+                    line-height: 1.5;
+                }
+                .entry-links {
+                    display: flex;
+                    margin-top: 6px;
+                }
+            }
+            .award-entry {
+                ~ .award-entry {
+                    margin-top: 28px;
+                }
+                .col-logo {
+                    display: flex !important;
+                    align-items: center;
+                    justify-content: center;
+                    height: 64px;
+
+                    img {
+                        width: auto !important;
+                        max-width: 150px;
+                        max-height: 64px;
+                    }
+                }
+            }
+        }
     }
 }

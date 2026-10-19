@@ -3,6 +3,8 @@ title: ""
 layout: single
 author_profile: true
 permalink: /
+github_stars: true
+classes: academic-home
 ---
 
 ## About Me
@@ -17,24 +19,24 @@ My resume is linked [here](/assets/pdf/cv.pdf).
 
 ## Education
 
-<div class="row">
+<div class="row education-entry">
     <div class="column col-logo">
         <img src="/assets/images/iiis.png" alt="IIIS, Tsinghua University logo" style="width: 60%;">
     </div>
     <div class="column entry-body">
         <p class="entry-title"><b>IIIS, Tsinghua University</b></p>
-        <div style="height: 2px;"></div>
+        <div class="entry-spacer" style="height: 2px;"></div>
         <p class="entry-sub">Undergraduate Student</p>
-        <div style="height: 0px;"></div>
+        <div class="entry-spacer" style="height: 0px;"></div>
         <p class="entry-end">Beijing, China, Sep 2024 - Present</p>
-        <div style="height: 0px;"></div>
+        <div class="entry-spacer" style="height: 0px;"></div>
         <p class="entry-end muted">Major GPA: 4.00/4.00, with 13/21 A+ (<span style="color: #E64545;">Top ~5%</span>) and 8/21 A (<span style="color: #FF8A00;">Top ~25%</span>)</p>
     </div>
 </div>
 
 ## Publications
 
-<div class="row">
+<div class="row publication-entry">
     <div class="column col-fig">
         <a href="/assets/images/publications/minit2i.png"><img src="/assets/images/publications/minit2i.png" alt="A Minimalist Baseline for Text-to-Image Generation teaser"></a>
     </div>
@@ -49,20 +51,20 @@ My resume is linked [here](/assets/pdf/cv.pdf).
                 <span class="muted">Kaiming He§</span>
         </p>
         <p class="entry-note">† Project lead, ‡ Core contributor, § Supervisor</p>
-        <div style="height: 0px;"></div>
+        <div class="entry-spacer" style="height: 0px;"></div>
         <p class="entry-meta">Blog post, 2026</p>
-        <div style="height: 0px;"></div>
+        <div class="entry-spacer" style="height: 0px;"></div>
         <p class="entry-links">
-             <a href="https://peppaking8.github.io/#/post/minit2i">[Project Page]</a>
-             <a href="https://github.com/Hope7Happiness/minit2i-torch">[PyTorch]</a>
-             <a href="https://github.com/PeppaKing8/minit2i-jax">[JAX]</a>
+             {% include publication-link.html label="Project Page" url="https://peppaking8.github.io/#/post/minit2i" icon="fas fa-globe" %}
+             {% include publication-link.html label="PyTorch" url="https://github.com/Hope7Happiness/minit2i-torch" icon="fab fa-github" repo="Hope7Happiness/minit2i-torch" %}
+             {% include publication-link.html label="JAX" url="https://github.com/PeppaKing8/minit2i-jax" icon="fab fa-github" repo="PeppaKing8/minit2i-jax" %}
         </p>
     </div>
 </div>
 
-<div style="height: 20px;"></div>
+<div class="entry-spacer" style="height: 20px;"></div>
 
-<div class="row">
+<div class="row publication-entry">
     <div class="column col-fig">
         <a href="/assets/images/publications/elf.gif"><img src="/assets/images/publications/elf.gif" alt="ELF: Embedded Language Flows teaser"></a>
     </div>
@@ -78,20 +80,20 @@ My resume is linked [here](/assets/pdf/cv.pdf).
                 <span class="muted">Jacob Andreas</span>,
                 <span class="muted">Kaiming He</span>
         </p>
-        <div style="height: 0px;"></div>
+        <div class="entry-spacer" style="height: 0px;"></div>
         <p class="entry-meta">Neural Information Processing Systems (NeurIPS) 2026</p>
-        <div style="height: 0px;"></div>
+        <div class="entry-spacer" style="height: 0px;"></div>
         <p class="entry-links">
-             <a href="https://arxiv.org/pdf/2605.10938">[Paper]</a>
-             <a href="https://arxiv.org/abs/2605.10938">[arXiv]</a>
-             <a href="https://github.com/lillian039/ELF">[Code]</a>
+             {% include publication-link.html label="Paper" url="https://arxiv.org/pdf/2605.10938" icon="far fa-file-pdf" %}
+             {% include publication-link.html label="arXiv" url="https://arxiv.org/abs/2605.10938" icon="arxiv" %}
+             {% include publication-link.html label="Code" url="https://github.com/lillian039/ELF" icon="fab fa-github" repo="lillian039/ELF" %}
         </p>
     </div>
 </div>
 
-<div style="height: 20px;"></div>
+<div class="entry-spacer" style="height: 20px;"></div>
 
-<div class="row">
+<div class="row publication-entry">
     <div class="column col-fig">
         <a href="/assets/images/publications/pmf.png"><img src="/assets/images/publications/pmf.png" alt="Pixel Mean Flows teaser"></a>
     </div>
@@ -108,20 +110,20 @@ My resume is linked [here](/assets/pdf/cv.pdf).
                 <span class="muted">Zhengyang Geng</span>,
                 <span class="muted">Kaiming He</span>
         </p>
-        <div style="height: 0px;"></div>
+        <div class="entry-spacer" style="height: 0px;"></div>
         <p class="entry-meta">International Conference on Machine Learning (ICML) 2026</p>
-        <div style="height: 0px;"></div>
+        <div class="entry-spacer" style="height: 0px;"></div>
         <p class="entry-links">
-             <a href="https://arxiv.org/pdf/2601.22158">[Paper]</a>
-             <a href="https://arxiv.org/abs/2601.22158">[arXiv]</a>
-             <a href="https://github.com/Lyy-iiis/pMF">[Code]</a>
+             {% include publication-link.html label="Paper" url="https://arxiv.org/pdf/2601.22158" icon="far fa-file-pdf" %}
+             {% include publication-link.html label="arXiv" url="https://arxiv.org/abs/2601.22158" icon="arxiv" %}
+             {% include publication-link.html label="Code" url="https://github.com/Lyy-iiis/pMF" icon="fab fa-github" repo="Lyy-iiis/pMF" %}
         </p>
     </div>
 </div>
 
-<div style="height: 20px;"></div>
+<div class="entry-spacer" style="height: 20px;"></div>
 
-<div class="row">
+<div class="row publication-entry">
     <div class="column col-fig">
         <a href="/assets/images/publications/biflow.png"><img src="/assets/images/publications/biflow.png" alt="Bidirectional Normalizing Flow teaser"></a>
     </div>
@@ -136,20 +138,20 @@ My resume is linked [here](/assets/pdf/cv.pdf).
                 <span class="muted">Kaiming He</span>
         </p>
         <p class="entry-note">* Equal technical contribution, † Project lead</p>
-        <div style="height: 0px;"></div>
+        <div class="entry-spacer" style="height: 0px;"></div>
         <p class="entry-meta">Computer Vision and Pattern Recognition (CVPR) 2026 (Highlight)</p>
-        <div style="height: 0px;"></div>
+        <div class="entry-spacer" style="height: 0px;"></div>
         <p class="entry-links">
-             <a href="https://arxiv.org/pdf/2512.10953">[Paper]</a>
-             <a href="https://arxiv.org/abs/2512.10953">[arXiv]</a>
-             <a href="https://github.com/Lyy-iiis/BiFlow">[Code]</a>
+             {% include publication-link.html label="Paper" url="https://arxiv.org/pdf/2512.10953" icon="far fa-file-pdf" %}
+             {% include publication-link.html label="arXiv" url="https://arxiv.org/abs/2512.10953" icon="arxiv" %}
+             {% include publication-link.html label="Code" url="https://github.com/Lyy-iiis/BiFlow" icon="fab fa-github" repo="Lyy-iiis/BiFlow" %}
         </p>
     </div>
 </div>
 
-<div style="height: 20px;"></div>
+<div class="entry-spacer" style="height: 20px;"></div>
 
-<div class="row">
+<div class="row publication-entry">
     <div class="column col-fig">
         <a href="/assets/images/publications/imf.png"><img src="/assets/images/publications/imf.png" alt="Improved Mean Flows teaser"></a>
     </div>
@@ -164,18 +166,18 @@ My resume is linked [here](/assets/pdf/cv.pdf).
                 <span class="muted">Kaiming He</span>
         </p>
         <p class="entry-meta">Computer Vision and Pattern Recognition (CVPR) 2026 (Highlight)</p>
-        <div style="height: 0px;"></div>
+        <div class="entry-spacer" style="height: 0px;"></div>
         <p class="entry-links">
-             <a href="https://arxiv.org/pdf/2512.02012">[Paper]</a>
-             <a href="https://arxiv.org/abs/2512.02012">[arXiv]</a>
-             <a href="https://github.com/Lyy-iiis/imeanflow">[Code]</a>
+             {% include publication-link.html label="Paper" url="https://arxiv.org/pdf/2512.02012" icon="far fa-file-pdf" %}
+             {% include publication-link.html label="arXiv" url="https://arxiv.org/abs/2512.02012" icon="arxiv" %}
+             {% include publication-link.html label="Code" url="https://github.com/Lyy-iiis/imeanflow" icon="fab fa-github" repo="Lyy-iiis/imeanflow" %}
         </p>
     </div>
 </div>
 
-<div style="height: 40px;"></div>
+<div class="entry-spacer" style="height: 40px;"></div>
 
-<div class="row">
+<div class="row publication-entry">
     <div class="column col-fig">
         <a href="/assets/images/publications/h3dp.jpg"><img src="/assets/images/publications/h3dp.jpg" alt="H³DP teaser"></a>
     </div>
@@ -192,84 +194,84 @@ My resume is linked [here](/assets/pdf/cv.pdf).
         </p>
         <p class="entry-meta">International Conference on Learning Representations (ICLR) 2026</p>
         <p class="entry-links">
-             <a href="https://lyy-iiis.github.io/h3dp/">[Project Page]</a>
-             <a href="https://arxiv.org/pdf/2505.07819">[Paper]</a>
-             <a href="https://arxiv.org/abs/2505.07819">[arXiv]</a>
+             {% include publication-link.html label="Project Page" url="https://lyy-iiis.github.io/h3dp/" icon="fas fa-globe" %}
+             {% include publication-link.html label="Paper" url="https://openreview.net/pdf?id=Q1CP0iAmOb" icon="far fa-file-pdf" %}
+             {% include publication-link.html label="arXiv" url="https://arxiv.org/abs/2505.07819" icon="arxiv" %}
         </p>
     </div>
 </div>
 
 ## Selected Awards
 
-<div class="row">
+<div class="row award-entry">
     <div class="column col-logo">
         <img src="/assets/images/sensetime.png" alt="SenseTime logo" style="width: 70%;">
     </div>
     <div class="column entry-body mid">
         <p class="entry-title"><b>SenseTime Scholarship</b></p>
-        <div style="height: 2px;"></div>
+        <div class="entry-spacer" style="height: 2px;"></div>
         <p class="entry-sub">Top 30 Undergraduates Nationwide</p>
-        <div style="height: 0px;"></div>
+        <div class="entry-spacer" style="height: 0px;"></div>
         <p class="entry-end">SenseTime, 2026</p>
     </div>
 </div>
 
-<div style="height: 20px;"></div>
+<div class="entry-spacer" style="height: 20px;"></div>
 
-<div class="row">
+<div class="row award-entry">
     <div class="column col-logo">
         <img src="/assets/images/spark.png" alt="Tsinghua Spark Program logo" style="width: 40%;">
     </div>
     <div class="column entry-body mid">
         <p class="entry-title"><b>Sparking Program</b></p>
-        <div style="height: 2px;"></div>
+        <div class="entry-spacer" style="height: 2px;"></div>
         <p class="entry-sub">Top 1% in Tsinghua</p>
-        <div style="height: 0px;"></div>
+        <div class="entry-spacer" style="height: 0px;"></div>
         <p class="entry-end">Tsinghua University, 2026</p>
     </div>
 </div>
 
-<div style="height: 20px;"></div>
+<div class="entry-spacer" style="height: 20px;"></div>
 
-<div class="row">
+<div class="row award-entry">
     <div class="column col-logo">
         <img src="/assets/images/thu.png" alt="Tsinghua University" style="width: 40%;">
     </div>
     <div class="column entry-body">
         <p class="entry-title"><b>National Scholarship</b></p>
-        <div style="height: 2px;"></div>
+        <div class="entry-spacer" style="height: 2px;"></div>
         <p class="entry-sub">Top Scholarship in China</p>
-        <div style="height: 0px;"></div>
+        <div class="entry-spacer" style="height: 0px;"></div>
         <p class="entry-end">China, 2025</p>
     </div>
 </div>
 
-<div style="height: 20px;"></div>
+<div class="entry-spacer" style="height: 20px;"></div>
 
-<div class="row">
+<div class="row award-entry">
     <div class="column col-logo">
         <img src="/assets/images/thu.png" alt="Tsinghua University" style="width: 40%;">
     </div>
     <div class="column entry-body">
         <p class="entry-title"><b>Freshman Scholarship</b></p>
-        <div style="height: 2px;"></div>
+        <div class="entry-spacer" style="height: 2px;"></div>
         <p class="entry-sub">Scholarship for Outstanding Freshmen</p>
-        <div style="height: 0px;"></div>
+        <div class="entry-spacer" style="height: 0px;"></div>
         <p class="entry-end">Tsinghua University, 2024</p>
     </div>
 </div>
 
-<div style="height: 20px;"></div>
+<div class="entry-spacer" style="height: 20px;"></div>
 
-<div class="row">
+<div class="row award-entry">
     <div class="column col-logo">
         <img src="/assets/images/cpho.png" alt="39th Chinese Physics Olympiad (CPhO) logo" style="width: 100%;">
     </div>
     <div class="column entry-body">
         <p class="entry-title"><b>The 39th Chinese Physics Olympiad (CPhO)</b></p>
-        <div style="height: 2px;"></div>
+        <div class="entry-spacer" style="height: 2px;"></div>
         <p class="entry-sub">Gold Medal (Top 10)</p>
-        <div style="height: 0px;"></div>
+        <div class="entry-spacer" style="height: 0px;"></div>
         <p class="entry-end">Chinese Physics Olympiad, 2022</p>
     </div>
 </div>
