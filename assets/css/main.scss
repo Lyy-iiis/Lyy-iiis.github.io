@@ -381,3 +381,74 @@ search: false
         }
     }
 }
+
+/* Desktop publication hierarchy and spacing. */
+@media (min-width: 1024px) {
+    /* Keep the wheel on the document; pin only when the full profile fits. */
+    .academic-home .sidebar.sticky {
+        position: static;
+        top: 2em;
+        overflow: visible;
+        max-height: none;
+
+        &.sidebar--pinned {
+            position: sticky;
+        }
+    }
+
+    .academic-home .page__content {
+        .publication-entry {
+            display: grid;
+            grid-template-columns: 25% minmax(0, 1fr);
+            column-gap: 32px;
+            align-items: center;
+
+            + .entry-spacer {
+                display: none;
+            }
+            ~ .publication-entry {
+                margin-top: 32px;
+            }
+            .col-fig {
+                display: block;
+                width: auto;
+
+                > a,
+                img {
+                    display: block;
+                }
+            }
+            .entry-body {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                width: auto;
+                margin-left: 0;
+                line-height: 1.55;
+
+                > p {
+                    display: block;
+                    margin: 0;
+                }
+                > .entry-spacer {
+                    display: none;
+                }
+                > .entry-title {
+                    font-size: 18px;
+                    line-height: 1.4;
+                }
+                > .entry-note {
+                    line-height: 1.5;
+                }
+                > .entry-meta {
+                    color: #5f666e;
+                    line-height: 1.5;
+                }
+                > .entry-links {
+                    display: flex;
+                    margin-top: 6px;
+                }
+            }
+        }
+    }
+}

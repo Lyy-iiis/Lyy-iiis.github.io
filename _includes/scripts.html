@@ -10,6 +10,10 @@
   <script defer src="{{ '/assets/js/publication-stars.js' | relative_url }}"></script>
 {% endif %}
 
+{% if page.classes contains 'academic-home' %}
+  <script defer src="{{ '/assets/js/author-sidebar.js' | relative_url }}"></script>
+{% endif %}
+
 {% if site.search == true or page.layout == "search" %}
   {%- assign search_provider = site.search_provider | default: "lunr" -%}
   {%- case search_provider -%}
