@@ -61,6 +61,86 @@ search: false
     font-size: 1.5em;
 }
 
+/* Compact masthead with quiet section navigation. */
+.masthead__inner-wrap {
+    min-height: 69px;
+    padding-block: 12px;
+}
+
+.masthead .greedy-nav {
+    min-height: 44px;
+
+    .site-title {
+        flex-shrink: 0;
+        margin-inline-end: 32px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.4;
+        color: #3f464d;
+        white-space: nowrap;
+
+        .site-title__local {
+            margin-inline-start: 0.4em;
+            color: #747b82;
+            font-weight: 500;
+        }
+    }
+
+    .masthead__menu-item {
+        padding-inline-start: 28px;
+
+        > a {
+            display: flex;
+            align-items: center;
+            min-height: 44px;
+            margin: 0;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 1.4;
+            color: #606970;
+
+            &:hover {
+                color: #30373d;
+            }
+
+            &:focus-visible {
+                outline: 2px solid #6f777d;
+                outline-offset: 3px;
+            }
+        }
+    }
+
+    .visible-links a::before {
+        bottom: 7px;
+        height: 1px;
+    }
+
+    .hidden-links .masthead__menu-item {
+        padding-inline-start: 0;
+
+        > a {
+            padding: 10px 20px;
+        }
+    }
+
+    .greedy-nav__toggle {
+        margin-inline-start: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .masthead .greedy-nav {
+        .site-title {
+            margin-inline-end: 16px;
+            font-size: 20px;
+        }
+
+        .visible-links .masthead__menu-item {
+            padding-inline-start: 16px;
+        }
+    }
+}
+
 /* 窄屏下让自定义双栏(Education / Publications / Awards)竖向堆叠 */
 @media (max-width: 600px) {
     .row .column {
