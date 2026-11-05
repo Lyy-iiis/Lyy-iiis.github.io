@@ -9,7 +9,7 @@ classes: academic-home
 
 ## About Me
 
-I am a sophomore majoring in Computer Science at the [IIIS, Tsinghua University](https://iiis.tsinghua.edu.cn/). Currently, I am an intern at [MIT CSAIL](https://www.csail.mit.edu/), supervised by Professor [Kaiming He](https://people.csail.mit.edu/kaiming/). My research interests lie in computer vision and deep generative models. I am particularly fascinated by simple yet effective model designs.
+I am a junior majoring in Computer Science at the [IIIS, Tsinghua University](https://iiis.tsinghua.edu.cn/). Currently, I am an intern at [MIT CSAIL](https://www.csail.mit.edu/), supervised by Professor [Kaiming He](https://people.csail.mit.edu/kaiming/). My research interests lie in computer vision and deep generative models. I am particularly fascinated by simple yet effective model designs.
 
 Before entering college, I competed in the Physics Olympiad during high school and won a gold medal in the 39th CPhO. Afterward, I spent one preparatory year at IIIS, Tsinghua University, where I built a solid foundation in the mathematical principles underlying computer science and deep learning. I am fortunate to conduct research under the supervision of Professor [Huazhe Xu](https://hxu.rocks/) during this period.
 
@@ -35,6 +35,31 @@ My resume is linked [here](/assets/pdf/cv.pdf).
 </div>
 
 ## Publications
+
+<div class="row publication-entry">
+    <div class="column col-fig">
+        <a href="/assets/images/publications/adaloop.png"><img src="/assets/images/publications/adaloop.png" alt="AdaLoop: Thinking with the Vision Encoder teaser"></a>
+    </div>
+    <div class="column entry-body">
+        <p class="entry-title"><b>AdaLoop: Thinking with the Vision Encoder</b></p>
+        <p class="entry-authors">
+                <span class="muted">Xinran Nicole Han*</span>,
+                <u><b>Yiyang Lu*</b></u>,
+                <span class="muted">Katelyn Gan</span>,
+                <span class="muted">Todd Zickler</span>
+        </p>
+        <div class="entry-spacer" style="height: 0px;"></div>
+        <p class="entry-meta">arXiv preprint, 2026</p>
+        <div class="entry-spacer" style="height: 0px;"></div>
+        <p class="entry-links">
+             {% include publication-link.html label="Paper" url="https://arxiv.org/pdf/2610.21323" icon="far fa-file-pdf" %}
+             {% include publication-link.html label="arXiv" url="https://arxiv.org/abs/2610.21323" icon="arxiv" %}
+             {% include publication-link.html label="Code" url="https://github.com/xrhan/AdaLoop" icon="fab fa-github" repo="xrhan/AdaLoop" %}
+        </p>
+    </div>
+</div>
+
+<div class="entry-spacer" style="height: 20px;"></div>
 
 <div class="row publication-entry">
     <div class="column col-fig">
@@ -242,7 +267,7 @@ My resume is linked [here](/assets/pdf/cv.pdf).
         <div class="entry-spacer" style="height: 2px;"></div>
         <p class="entry-sub">Top Scholarship in China</p>
         <div class="entry-spacer" style="height: 0px;"></div>
-        <p class="entry-end">China, 2025</p>
+        <p class="entry-end">China, 2025 &amp; 2026</p>
     </div>
 </div>
 
